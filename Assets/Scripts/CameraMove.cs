@@ -11,6 +11,9 @@ public class CameraMove : MonoBehaviour
     float mouseSensitivity = 3f;
     [SerializeField]
     float cameraVerticalRotation = 3f;
+    float cameraHorizontalRotation = 3f;
+
+    [SerializeField] Transform orientation;
 
     [SerializeField]
     float zoom;
@@ -33,6 +36,7 @@ public class CameraMove : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
     void FixedUpdate()
     {
         if (Physics.Raycast(transform.position, transform.forward, out hit, Mathf.Infinity, layerMask))
@@ -52,8 +56,10 @@ public class CameraMove : MonoBehaviour
         float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
 
         cameraVerticalRotation -= inputY;
+        cameraHorizontalRotation += inputX;
         cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-        transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
+        transform.localEulerAngles = new Vector3(cameraVerticalRotation, cameraHorizontalRotation, 0);
+        orientation.rotation = Quaternion.Euler(0, cameraHorizontalRotation, 0);
 
         player.Rotate(Vector3.up * inputX);
 
