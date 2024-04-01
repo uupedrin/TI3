@@ -30,7 +30,7 @@ public class SnapCam : MonoBehaviour
 	{
 		if(snapCam.gameObject.activeInHierarchy) 
 		{
-			AudioManager.instance.TryPlay2DEffect(0); //Camera Snap
+			AudioManager.instance.TryPlay3DEffect(0, transform.parent.transform.position); //Camera Snap
 			
 			Texture2D snapshot = new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
 			snapCam.Render();
@@ -39,15 +39,16 @@ public class SnapCam : MonoBehaviour
 			byte[] bytes = snapshot.EncodeToPNG();
 			string fileName = SnapShotName();
 
-			/*if(!System.IO.Directory.Exists(Application.persistentDataPath + "/SnapShots")) 
+			if(!System.IO.Directory.Exists(Application.persistentDataPath + "/SnapShots")) 
 			{
 				System.IO.Directory.CreateDirectory(Application.persistentDataPath + "/SnapShots");
-			}  (PARA A BUILDAR, EXCLUA O IF DE BAIXO!!! E TIRE O /* DESSA)  */
+			}  //(PARA A BUILDAR, EXCLUA O IF DE BAIXO!!! E TIRE O /* DESSA)  
 
-			if (!System.IO.Directory.Exists(Application.dataPath + "/SnapShots"))
-			{
-				System.IO.Directory.CreateDirectory(Application.dataPath + "/SnapShots");
-			}
+			// if (!System.IO.Directory.Exists(Application.dataPath + "/SnapShots"))
+			// {
+			// 	System.IO.Directory.CreateDirectory(Application.dataPath + "/SnapShots");
+			// }
+			
 			System.IO.File.WriteAllBytes(fileName, bytes);
 			snapCam.gameObject.SetActive(false);
 		}
@@ -61,8 +62,8 @@ public class SnapCam : MonoBehaviour
 	string SnapShotName() 
 	{
 		return string.Format("{0}/SnapShots/snap {1}x{2} {3}.png", 
-		//Application.persistentDataPath, (PARA A BUILDAR, EXCLUA A LINHA DE BAIXO!!! E TIRE O // DESSA)
-		Application.dataPath,
+		Application.persistentDataPath,	//(PARA A BUILDAR, EXCLUA A LINHA DE BAIXO!!! E TIRE O // DESSA)
+		//Application.dataPath,
 		resWidth, resHeight, 
 		System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
 	}
