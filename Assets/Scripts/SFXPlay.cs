@@ -22,6 +22,7 @@ public class SFXPlay : MonoBehaviour
 	{
 		yield return new WaitForSeconds(source.clip.length);
 		source.Stop();
+		gameObject.transform.position = Vector3.zero;
 		gameObject.SetActive(false);
 	}
 }

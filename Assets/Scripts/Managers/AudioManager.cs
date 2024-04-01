@@ -78,8 +78,18 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 	
-	public void TryPlay3DEffect(int sfxId, Vector3 audioPos, int maxDistance)
+	public void TryPlay3DEffect(int sfxId, Vector3 audioPos)
 	{
-		
+		for (int i = 0; i < source2DPool.Count; i++)
+		{
+			if(!source2DPool[i].activeInHierarchy)
+			{
+				AudioSource source = source2DPool[i].GetComponent<AudioSource>();
+				source.clip = sfx2DClips[sfxId];
+				source.gameObject.transform.position = audioPos;
+				source.gameObject.SetActive(true);
+				break;
+			}
+		}
 	}
 }

@@ -31,6 +31,7 @@ public class CameraMove : MonoBehaviour
     RaycastHit hit;
     RaycastHit ray;
     int layerMask = 1<<6;
+    public Vector2 LockAxis;
     void Start()
     {
         Cursor.visible = false;
@@ -52,8 +53,13 @@ public class CameraMove : MonoBehaviour
     }
     private void Update()
     {
+#if UNITY_ANDROID
+        float mouseX = LockAxis.x * Time.deltaTime * mouseSensitivity;
+        float mouseY = LockAxis.y * Time.deltaTime * mouseSensitivity;
+#else
         float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
         float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+#endif
 
         cameraVerticalRotation -= inputY;
         cameraHorizontalRotation += inputX;
