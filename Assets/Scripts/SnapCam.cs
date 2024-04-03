@@ -39,16 +39,18 @@ public class SnapCam : MonoBehaviour
 			byte[] bytes = snapshot.EncodeToPNG();
 			string fileName = SnapShotName();
 
+			#if UNITY_STANDALONE
 			if(!System.IO.Directory.Exists(Application.persistentDataPath + "/SnapShots")) 
 			{
 				System.IO.Directory.CreateDirectory(Application.persistentDataPath + "/SnapShots");
-			}  //(PARA A BUILDAR, EXCLUA O IF DE BAIXO!!! E TIRE O /* DESSA)  
-
-			// if (!System.IO.Directory.Exists(Application.dataPath + "/SnapShots"))
-			// {
-			// 	System.IO.Directory.CreateDirectory(Application.dataPath + "/SnapShots");
-			// }
-			
+			}
+			#endif
+			#if UNITY_EDITOR
+			if (!System.IO.Directory.Exists(Application.dataPath + "/SnapShots"))
+			{
+			 	System.IO.Directory.CreateDirectory(Application.dataPath + "/SnapShots");
+			}
+			#endif
 			System.IO.File.WriteAllBytes(fileName, bytes);
 			snapCam.gameObject.SetActive(false);
 		}
@@ -61,10 +63,19 @@ public class SnapCam : MonoBehaviour
 	}
 	string SnapShotName() 
 	{
-		return string.Format("{0}/SnapShots/snap {1}x{2} {3}.png", 
-		Application.persistentDataPath,	//(PARA A BUILDAR, EXCLUA A LINHA DE BAIXO!!! E TIRE O // DESSA)
-		//Application.dataPath,
+		string photoName;
+		#if UNITY_STANDALONE
+		photoName =  string.Format("{0}/SnapShots/snap {1}x{2} {3}.png", 
+		Application.persistentDataPath,
 		resWidth, resHeight, 
 		System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
+		#endif
+		#if UNITY_EDITOR
+        photoName = string.Format("{0}/SnapShots/snap {1}x{2} {3}.png",
+        Application.dataPath,
+        resWidth, resHeight,
+        System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
+		#endif
+		return photoName;
 	}
 }

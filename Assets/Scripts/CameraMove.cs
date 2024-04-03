@@ -79,7 +79,7 @@ public class CameraMove : MonoBehaviour
             zoom += Input.GetAxis("Mouse ScrollWheel") * sense;
             zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
         }
-        if (photoMode && canPhoto && (Input.GetKeyDown("enter") || Input.GetMouseButtonDown(0)))
+        if (photoMode && canPhoto && (Input.GetKeyDown("return") || Input.GetMouseButtonDown(0)))
         {
             snapCam.TakeSnapShot();
             photoMode = false;
