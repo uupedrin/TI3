@@ -12,8 +12,7 @@ public class CameraMove : MonoBehaviour
     [SerializeField]
     float cameraVerticalRotation = 3f;
     float cameraHorizontalRotation = 3f;
-
-    [SerializeField] Transform orientation;
+    public Vector2 LockAxis;
 
     [SerializeField]
     float zoom;
@@ -35,7 +34,7 @@ public class CameraMove : MonoBehaviour
     bool secondRay;
     int layerMask = 1<<6;
     int layerMask2 = ~20;
-    public Vector2 LockAxis;
+    public string photoName;
     void Start()
     {
         Cursor.visible = false;
@@ -111,7 +110,8 @@ public class CameraMove : MonoBehaviour
         }
         if (photoMode && canPhoto && (Input.GetKeyDown("return") || Input.GetMouseButtonDown(0)))
         {
-            snapCam.TakeSnapShot();
+            photoName = ray.collider.tag;
+            snapCam.TakeSnapShot(photoName);
             photoMode = false;
             Camera.main.fieldOfView = baseZoom;
         }

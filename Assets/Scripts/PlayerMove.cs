@@ -20,9 +20,9 @@ public class PlayerMove : MonoBehaviour
     {
         body = GetComponent<Rigidbody>();
         joystickSprite.SetActive(false);
-#if UNITY_ANDROID
+        #if UNITY_ANDROID
         joystickSprite.SetActive(true);
-#endif
+        #endif
     }
 
     void FixedUpdate()
@@ -32,12 +32,12 @@ public class PlayerMove : MonoBehaviour
 
 
 
-#if UNITY_ANDROID
+        #if UNITY_ANDROID
         direction = orientation.forward * joystick.Vertical + orientation.right * joystick.Horizontal;
-#else
+        #else
 
         direction = orientation.forward * moveY + orientation.right * moveX;
-#endif
+        #endif
 
         body.AddForce(direction.normalized * moveForce);
         if(body.velocity.magnitude > maxSpeed) body.velocity = Vector3.ClampMagnitude(body.velocity, maxSpeed);
