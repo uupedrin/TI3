@@ -12,6 +12,7 @@ public class SnapCam : MonoBehaviour
 
 	int resWidth = 1920;
 	int resHeight = 1080;
+	string name;
 	void Awake()
 	{
 		snapCam = GetComponent<Camera>();
@@ -55,8 +56,9 @@ public class SnapCam : MonoBehaviour
 			snapCam.gameObject.SetActive(false);
 		}
 	}
-	public void TakeSnapShot() 
+	public void TakeSnapShot(string n) 
 	{
+		name = n;
 		snapCam.gameObject.SetActive(true);
 		snapCam.fieldOfView = mainCam.fieldOfView;
 		snapCam.transform.rotation = mainCam.transform.rotation;
@@ -65,14 +67,16 @@ public class SnapCam : MonoBehaviour
 	{
 		string photoName;
 		#if UNITY_STANDALONE
-		photoName =  string.Format("{0}/SnapShots/snap {1}x{2} {3}.png", 
+		photoName =  string.Format("{0}/SnapShots/{1} {2}x{3} {4}.png", 
 		Application.persistentDataPath,
+		name,
 		resWidth, resHeight, 
 		System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
 		#endif
 		#if UNITY_EDITOR
-        photoName = string.Format("{0}/SnapShots/snap {1}x{2} {3}.png",
+        photoName = string.Format("{0}/SnapShots/{1} {2}x{3} {4}.png",
         Application.dataPath,
+		name,
         resWidth, resHeight,
         System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
 		#endif
