@@ -9,10 +9,10 @@ public class SnapCam : MonoBehaviour
 	Camera snapCam;
 	[SerializeField]
 	Camera mainCam;
-
+	
 	int resWidth = 1920;
 	int resHeight = 1080;
-	string name;
+	new string name;
 	void Awake()
 	{
 		snapCam = GetComponent<Camera>();
@@ -53,6 +53,7 @@ public class SnapCam : MonoBehaviour
 			}
 			#endif
 			System.IO.File.WriteAllBytes(fileName, bytes);
+			FlashcardManager.instance.CreateFlashcard(name, fileName);
 			snapCam.gameObject.SetActive(false);
 		}
 	}
@@ -74,11 +75,11 @@ public class SnapCam : MonoBehaviour
 		System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
 		#endif
 		#if UNITY_EDITOR
-        photoName = string.Format("{0}/SnapShots/{1} {2}x{3} {4}.png",
-        Application.dataPath,
+		photoName = string.Format("{0}/SnapShots/{1} {2}x{3} {4}.png",
+		Application.dataPath,
 		name,
-        resWidth, resHeight,
-        System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
+		resWidth, resHeight,
+		System.DateTime.Now.ToString("dd-MM-yyyy_HH-mm-ss"));
 		#endif
 		return photoName;
 	}
