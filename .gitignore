@@ -73,3 +73,8 @@ crashlytics-build.properties
 
 # TSK VSCode
 /CSharpProjFolders/*
+
+#Screenshots
+SnapShots/
+!SnapShots/*.renderTexture
+!SnapShots/*.renderTexture.meta

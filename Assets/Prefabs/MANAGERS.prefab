@@ -30,6 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9202231755840649463}
+  - {fileID: 2467538353511996525}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4582668723028766344
@@ -80,8 +81,52 @@ MonoBehaviour:
   sfxSourcePrefab2D: {fileID: 4435573488091898152, guid: de96f8ae49265ab4d9a68dd127369649,
     type: 3}
   sfx2DClips:
-  - {fileID: 8300000, guid: dd8dcf75818b0fb4183541ceebce1d2b, type: 3}
+  - {fileID: 8300000, guid: ff7013c18292c914d89a13cb52667d7f, type: 3}
   sourceAmount2D: 10
   sfxSourcePrefab3D: {fileID: 0}
   sfx3DClips: []
   sourceAmount3D: 0
+--- !u!1 &8052967978943895509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2467538353511996525}
+  - component: {fileID: 8502947025731964206}
+  m_Layer: 0
+  m_Name: FlashcardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2467538353511996525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052967978943895509}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5475082391115684142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8502947025731964206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8052967978943895509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29e1515447174414fa4492a23029be1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
