@@ -104,6 +104,7 @@ public class CameraMove : MonoBehaviour
 		if (!photoMode && Input.GetKeyDown("space"))
 		{
 			photoMode = true;
+			UIManager.uiManager.TurnOnPhoto();
 		}
 		if (photoMode) 
 		{
@@ -117,11 +118,13 @@ public class CameraMove : MonoBehaviour
 			snapCam.TakeSnapShot(photoName);
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
+			UIManager.uiManager.TurnOffPhoto();
 		}
 		if (photoMode && (Input.GetKeyDown("escape") || Input.GetMouseButtonDown(1)))
 		{
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
+			UIManager.uiManager.TurnOffPhoto();
 		}
 		if(Input.GetKeyDown(KeyCode.F))
 		{
