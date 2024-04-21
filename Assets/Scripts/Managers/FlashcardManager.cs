@@ -7,6 +7,7 @@ public class FlashcardManager : MonoBehaviour
 {
 	public static FlashcardManager instance;
 	public RevisionHandler flashcardCanvas;
+	public ShowPictureOnScreen pictureScriptHolder;
 	public bool interactingWithFlashcards;
 	void Awake()
 	{

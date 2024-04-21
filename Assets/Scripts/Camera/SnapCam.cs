@@ -54,6 +54,7 @@ public class SnapCam : MonoBehaviour
 			#endif
 			System.IO.File.WriteAllBytes(fileName, bytes);
 			FlashcardManager.instance.CreateFlashcard(name, fileName);
+			FlashcardManager.instance.pictureScriptHolder.Enable(name, fileName);
 			snapCam.gameObject.SetActive(false);
 		}
 	}
