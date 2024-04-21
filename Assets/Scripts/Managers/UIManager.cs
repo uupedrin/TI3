@@ -4,25 +4,20 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    static public UIManager uiManager;
-    public GameObject photoUI;
-    void Start()
-    {
-        uiManager = this;
-    }
+	static public UIManager uiManager;
+	public GameObject photoUI;
+	void Start()
+	{
+		uiManager = this;
+	}
 
-    void Update()
-    {
-        
-    }
+	public void TurnOnPhoto()
+	{
+		photoUI.SetActive(true);
+	}
 
-    public void TurnOnPhoto()
-    {
-        photoUI.SetActive(true);
-    }
-
-    public void TurnOffPhoto()
-    {
-        photoUI.SetActive(false);
-    }
+	public void TurnOffPhoto()
+	{
+		photoUI.SetActive(false);
+	}
 }
