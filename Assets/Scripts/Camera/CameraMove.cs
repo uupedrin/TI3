@@ -7,20 +7,16 @@ public class CameraMove : MonoBehaviour
 {
 	[SerializeField]
 	Transform player;
-	[SerializeField]
-	float mouseSensitivity = 3f;
-	[SerializeField]
-	float cameraVerticalRotation = 3f;
-	float cameraHorizontalRotation = 3f;
+	float mouseSensitivity = 2f;
+	float cameraVerticalRotation = 2f;
+	float cameraHorizontalRotation = 2f;
 	public Vector2 LockAxis;
-
 	[SerializeField]
 	float zoom;
 	float baseZoom = 60;
 	float maxZoom = 25;
 	float minZoom = 50;
 	float sense = 10;
-
 
 	[SerializeField]
 	SnapCam snapCam;
