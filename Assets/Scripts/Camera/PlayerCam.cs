@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class PlayerCam : MonoBehaviour
+public class CameraMove : MonoBehaviour
 {
 	[SerializeField] Transform player;
 	[SerializeField] float senseX;
