@@ -60,6 +60,7 @@ public class PlayerCam : MonoBehaviour
 	}
 	private void Update()
 	{
+		if(GameManager.instance.isPaused) return;
 		if(FlashcardManager.instance.interactingWithFlashcards) return;
 		
 		#if UNITY_ANDROID
@@ -96,7 +97,7 @@ public class PlayerCam : MonoBehaviour
 		if (!photoMode && Input.GetKeyDown("space"))
 		{
 			photoMode = true;
-			UIManager.uiManager.TurnOnPhoto();
+			GameManager.instance.uiManager.TurnOnPhoto();
 		}
 		if (photoMode) 
 		{
@@ -110,13 +111,13 @@ public class PlayerCam : MonoBehaviour
 			snapCam.TakeSnapShot(photoName);
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
-			UIManager.uiManager.TurnOffPhoto();
+			GameManager.instance.uiManager.TurnOffPhoto();
 		}
 		if (photoMode && (Input.GetKeyDown("escape") || Input.GetMouseButtonDown(1)))
 		{
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
-			UIManager.uiManager.TurnOffPhoto();
+			GameManager.instance.uiManager.TurnOffPhoto();
 		}
 		if(Input.GetKeyDown(KeyCode.F))
 		{

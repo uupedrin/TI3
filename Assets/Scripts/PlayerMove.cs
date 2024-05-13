@@ -27,7 +27,9 @@ public class PlayerMove : MonoBehaviour
 
 	void FixedUpdate()
 	{
+		if(GameManager.instance.isPaused) return;
 		if(FlashcardManager.instance.interactingWithFlashcards) return;
+		
 		moveX = Input.GetAxisRaw("Horizontal");
 		moveY = Input.GetAxisRaw("Vertical");
 
