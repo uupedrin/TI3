@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.1749183, g: 0.21881306, b: 0.30110013, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -66735,8 +66735,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: us
-  objectColor: among
+  objectName: Car
+  objectColor: Blue
   fullName: 
   showColor: 1
 --- !u!1001 &1618843703
