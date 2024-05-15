@@ -106,7 +106,7 @@ public class PlayerCam : MonoBehaviour
 		}
 		if (photoMode && canPhoto && (Input.GetKeyDown("return") || Input.GetMouseButtonDown(0)))
 		{
-			photoName = ray.collider.tag;
+			photoName = ray.collider.GetComponent<Categories>().fullName;
 			snapCam.TakeSnapShot(photoName);
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
