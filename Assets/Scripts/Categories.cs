@@ -8,7 +8,7 @@ public class Categories : MonoBehaviour
 {
     public string objectName;
     public string objectColor;
-    public string fullName;
+    [HideInInspector] public string fullName;
     [SerializeField] bool showColor;
     StringBuilder sb = new StringBuilder();
 
