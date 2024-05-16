@@ -16,6 +16,7 @@ public class PlayerCam : MonoBehaviour
 	float baseZoom = 60;
 	float maxZoom = 25;
 	float minZoom = 50;
+	[SerializeField] float zoomSpeed;
 	[SerializeField] SnapCam snapCam;
 	[SerializeField] bool canPhoto;
 	[SerializeField] bool photoMode = false;
@@ -116,7 +117,7 @@ public class PlayerCam : MonoBehaviour
 		if (photoMode) 
 		{
 			Camera.main.fieldOfView = zoom;
-			zoom -= Input.GetAxis("Mouse ScrollWheel");
+			zoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 			zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
 		}
 		if (photoMode && canPhoto && (Input.GetKeyDown("return") || Input.GetMouseButtonDown(0)))
