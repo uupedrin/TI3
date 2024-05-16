@@ -39328,6 +39328,7 @@ MonoBehaviour:
   orientation: {fileID: 2475925803883478932}
   LockAxis: {x: 0, y: 0}
   zoom: 40
+  zoomSpeed: 20
   snapCam: {fileID: 2475925803883478933}
   canPhoto: 0
   photoMode: 0
