@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -75,7 +76,7 @@ public class PlayerCam : MonoBehaviour
 		}
 	}
 	private void Update()
-	{
+	{		
 		if(FlashcardManager.instance.interactingWithFlashcards) return;
 		
 		#if UNITY_ANDROID
@@ -109,30 +110,32 @@ public class PlayerCam : MonoBehaviour
 			}
 		}
 
-		if (!photoMode && Input.GetKeyDown("space"))
+		if (Input.GetMouseButtonDown(1))
 		{
-			photoMode = true;
-			UIManager.uiManager.TurnOnPhoto();
+			photoMode = !photoMode;
 		}
 		if (photoMode) 
 		{
-			Camera.main.fieldOfView = zoom;
+			Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, zoom, Time.deltaTime * zoomSpeed);
+			UIManager.uiManager.TurnOffBase();
+			UIManager.uiManager.TurnOnPhoto();
 			zoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 			zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
 		}
-		if (photoMode && canPhoto && (Input.GetKeyDown("return") || Input.GetMouseButtonDown(0)))
+		if (photoMode && canPhoto && Input.GetMouseButtonDown(0))
 		{
 			photoName = ray.collider.GetComponent<Categories>().fullName;
 			snapCam.TakeSnapShot(photoName);
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
 			UIManager.uiManager.TurnOffPhoto();
+			UIManager.uiManager.TurnOnBase();
 		}
-		if (photoMode && (Input.GetKeyDown("escape") || Input.GetMouseButtonDown(1)))
+		if (!photoMode)
 		{
-			photoMode = false;
-			Camera.main.fieldOfView = baseZoom;
+			Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, baseZoom, Time.deltaTime * zoomSpeed);
 			UIManager.uiManager.TurnOffPhoto();
+			UIManager.uiManager.TurnOnBase();
 		}
 		if(Input.GetKeyDown(KeyCode.F))
 		{
