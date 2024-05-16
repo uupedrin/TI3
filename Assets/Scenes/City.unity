@@ -5552,6 +5552,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1387224453}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1387224456}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1387224455}
   m_SourcePrefab: {fileID: 100100000, guid: 31365fff2e4a46e428bc25af3643273b, type: 3}
 --- !u!4 &136314691 stripped
 Transform:
@@ -7444,6 +7452,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1032471052}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032471054}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1032471053}
   m_SourcePrefab: {fileID: 100100000, guid: c0897de0b168ada4bbeacf8ffd7bbdda, type: 3}
 --- !u!4 &168846190 stripped
 Transform:
@@ -14813,6 +14829,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1677792854}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab0389f0959e3f94ebf318fd987f4afb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1677792856}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab0389f0959e3f94ebf318fd987f4afb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1677792855}
   m_SourcePrefab: {fileID: 100100000, guid: ab0389f0959e3f94ebf318fd987f4afb, type: 3}
 --- !u!4 &390266556 stripped
 Transform:
@@ -17579,6 +17603,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2126311167}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2126311169}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2126311168}
   m_SourcePrefab: {fileID: 100100000, guid: bb366cb39059b5745b3c83ea47e5f97a, type: 3}
 --- !u!4 &473895296 stripped
 Transform:
@@ -22826,7 +22858,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.190002
+      value: -42.690002
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
         type: 3}
@@ -22836,7 +22868,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 139.19
+      value: 139.69
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
         type: 3}
@@ -22948,6 +22980,16 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 8449996119470504636, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8449996119470504636, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      propertyPath: m_Materials.Array.data[7]
+      value: 
+      objectReference: {fileID: 2100000, guid: 43607eea39cc451408910417ee8f38c8, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -22956,6 +22998,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1478132824}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1478132826}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1478132825}
   m_SourcePrefab: {fileID: 100100000, guid: c0897de0b168ada4bbeacf8ffd7bbdda, type: 3}
 --- !u!4 &633218965 stripped
 Transform:
@@ -25860,6 +25910,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2026742661}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026742663}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2026742662}
   m_SourcePrefab: {fileID: 100100000, guid: e8de6dbef973ab7408d65d1485e7a9b5, type: 3}
 --- !u!4 &706537907 stripped
 Transform:
@@ -34236,6 +34294,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1633816377}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1633816379}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1633816378}
   m_SourcePrefab: {fileID: 100100000, guid: bb366cb39059b5745b3c83ea47e5f97a, type: 3}
 --- !u!4 &916730812 stripped
 Transform:
@@ -35438,6 +35504,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1618348571}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 485abd46c5504a5408b3ce4a324cf28f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1618348573}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 485abd46c5504a5408b3ce4a324cf28f,
         type: 3}
       insertIndex: -1
@@ -37568,6 +37638,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 988419605}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 988419607}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 988419606}
   m_SourcePrefab: {fileID: 100100000, guid: e8de6dbef973ab7408d65d1485e7a9b5, type: 3}
 --- !u!4 &988419604 stripped
 Transform:
@@ -37596,6 +37674,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &988419606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978334660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &988419607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 978334660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Yellow
+  fullName: 
+  showColor: 1
 --- !u!1001 &989345160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39069,6 +39175,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1008045668}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 492fd86ed772fa243b23e4a2b5269bd2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008045670}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 492fd86ed772fa243b23e4a2b5269bd2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1008045669}
   m_SourcePrefab: {fileID: 100100000, guid: 492fd86ed772fa243b23e4a2b5269bd2, type: 3}
 --- !u!4 &1008045667 stripped
 Transform:
@@ -39097,6 +39211,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1008045669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97801616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1008045670
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97801616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Jeep
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1 &1012028741
 GameObject:
   m_ObjectHideFlags: 0
@@ -40097,6 +40239,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1032471053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032471051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1032471054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032471051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1 &1032970279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8aee5bb33830e9a4b9e7aa4c002eaf20,
@@ -42932,6 +43102,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1095145920}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab0389f0959e3f94ebf318fd987f4afb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095145922}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ab0389f0959e3f94ebf318fd987f4afb,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1095145921}
   m_SourcePrefab: {fileID: 100100000, guid: ab0389f0959e3f94ebf318fd987f4afb, type: 3}
 --- !u!4 &1095145919 stripped
 Transform:
@@ -42960,6 +43138,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1095145921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839979644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1095145922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839979644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Truck
+  objectColor: White
+  fullName: 
+  showColor: 0
 --- !u!1 &1097132826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -50907,6 +51113,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1252401435}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 492fd86ed772fa243b23e4a2b5269bd2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252401437}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 492fd86ed772fa243b23e4a2b5269bd2,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1252401436}
   m_SourcePrefab: {fileID: 100100000, guid: 492fd86ed772fa243b23e4a2b5269bd2, type: 3}
 --- !u!4 &1252401434 stripped
 Transform:
@@ -50935,6 +51149,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1252401436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031879312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1252401437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031879312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Jeep
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1 &1252464297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -52373,6 +52615,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1934079268}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ed2c945b5e7ca4db75bf550487d85e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1934079270}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ed2c945b5e7ca4db75bf550487d85e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1934079269}
   m_SourcePrefab: {fileID: 100100000, guid: a0ed2c945b5e7ca4db75bf550487d85e, type: 3}
 --- !u!4 &1298454231 stripped
 Transform:
@@ -52655,6 +52905,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1299715347}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b5b7895cbc36f6c48b3fd27e536ae40d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299715349}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b5b7895cbc36f6c48b3fd27e536ae40d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1299715348}
   m_SourcePrefab: {fileID: 100100000, guid: b5b7895cbc36f6c48b3fd27e536ae40d, type: 3}
 --- !u!4 &1299715346 stripped
 Transform:
@@ -52683,6 +52941,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1299715348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131158814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1299715349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1131158814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Pickup Truck
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1001 &1300763263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -55815,6 +56101,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1732865114}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1732865116}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1732865115}
   m_SourcePrefab: {fileID: 100100000, guid: e8de6dbef973ab7408d65d1485e7a9b5, type: 3}
 --- !u!4 &1372175106 stripped
 Transform:
@@ -56808,6 +57102,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1387224455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387224452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1387224456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387224452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Pickup Truck
+  objectColor: White
+  fullName: 
+  showColor: 1
 --- !u!1001 &1391520751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -59787,6 +60109,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1478132825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478132823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478132826
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478132823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1001 &1479119784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63804,6 +64154,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1553263798}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6069581eb3e9cd245b07c10bc4d08163,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1553263800}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 6069581eb3e9cd245b07c10bc4d08163,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1553263799}
   m_SourcePrefab: {fileID: 100100000, guid: 6069581eb3e9cd245b07c10bc4d08163, type: 3}
 --- !u!4 &1553263797 stripped
 Transform:
@@ -63832,6 +64190,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1553263799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734188552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1553263800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734188552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Taxi
+  objectColor: 
+  fullName: 
+  showColor: 1
 --- !u!1 &1555234988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a8a95ec8fc1efec418ed503155818895,
@@ -66732,10 +67118,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1618348570}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1618348573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618348570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
+  objectName: Van
   objectColor: Blue
   fullName: 
   showColor: 1
@@ -67758,6 +68156,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1633816378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633816376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1633816379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633816376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Red
+  fullName: 
+  showColor: 1
 --- !u!1 &1640584424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff7df2ff3bbc9b64384cc22c0ac057d3,
@@ -69055,6 +69481,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1677792855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677792853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1677792856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1677792853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Truck
+  objectColor: White
+  fullName: 
+  showColor: 0
 --- !u!1001 &1679360217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71355,6 +71809,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1727800506}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1727800508}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1727800507}
   m_SourcePrefab: {fileID: 100100000, guid: 31365fff2e4a46e428bc25af3643273b, type: 3}
 --- !u!4 &1727800505 stripped
 Transform:
@@ -71383,6 +71845,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1727800507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49946928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1727800508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49946928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Pickup Truck
+  objectColor: White
+  fullName: 
+  showColor: 1
 --- !u!1001 &1728175308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71642,6 +72132,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1731571811}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731571813}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1731571812}
   m_SourcePrefab: {fileID: 100100000, guid: bb366cb39059b5745b3c83ea47e5f97a, type: 3}
 --- !u!4 &1731571810 stripped
 Transform:
@@ -71670,6 +72168,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1731571812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088641477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1731571813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1088641477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Red
+  fullName: 
+  showColor: 1
 --- !u!1 &1732865113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
@@ -71697,6 +72223,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1732865115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732865113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1732865116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732865113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Yellow
+  fullName: 
+  showColor: 1
 --- !u!1 &1733919750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3650649e16fca1440ac58308c364046c,
@@ -79315,6 +79869,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1907370134}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907370136}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0897de0b168ada4bbeacf8ffd7bbdda,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1907370135}
   m_SourcePrefab: {fileID: 100100000, guid: c0897de0b168ada4bbeacf8ffd7bbdda, type: 3}
 --- !u!4 &1907370133 stripped
 Transform:
@@ -79343,6 +79905,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1907370135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801047091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1907370136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801047091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Green
+  fullName: 
+  showColor: 1
 --- !u!1 &1907773649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
@@ -80346,6 +80936,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1934079269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934079267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1934079270
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934079267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Ambulance
+  objectColor: 
+  fullName: 
+  showColor: 0
 --- !u!1 &1937353740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c404ae65a574802429d4f5c6c352fb8b,
@@ -81536,6 +82154,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1964896001}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ed2c945b5e7ca4db75bf550487d85e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1964896003}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: a0ed2c945b5e7ca4db75bf550487d85e,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1964896002}
   m_SourcePrefab: {fileID: 100100000, guid: a0ed2c945b5e7ca4db75bf550487d85e, type: 3}
 --- !u!4 &1964896000 stripped
 Transform:
@@ -81564,6 +82190,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &1964896002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023484351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1964896003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023484351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Ambulance
+  objectColor: 
+  fullName: 
+  showColor: 0
 --- !u!1 &1965323442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -84242,6 +84896,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &2026742662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026742660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2026742663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2026742660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Yellow
+  fullName: 
+  showColor: 1
 --- !u!1001 &2027448822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86644,6 +87326,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2075663782}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2075663784}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: bb366cb39059b5745b3c83ea47e5f97a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2075663783}
   m_SourcePrefab: {fileID: 100100000, guid: bb366cb39059b5745b3c83ea47e5f97a, type: 3}
 --- !u!4 &2075663781 stripped
 Transform:
@@ -86672,6 +87362,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &2075663783
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289394036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2075663784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289394036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Red
+  fullName: 
+  showColor: 1
 --- !u!1001 &2076539388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88023,6 +88741,14 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2097755903}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 485abd46c5504a5408b3ce4a324cf28f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2097755905}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 485abd46c5504a5408b3ce4a324cf28f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2097755904}
   m_SourcePrefab: {fileID: 100100000, guid: 485abd46c5504a5408b3ce4a324cf28f, type: 3}
 --- !u!4 &2097755902 stripped
 Transform:
@@ -88051,6 +88777,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &2097755904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101181846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2097755905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 101181846}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Van
+  objectColor: Blue
+  fullName: 
+  showColor: 1
 --- !u!1001 &2100068434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89767,6 +90521,34 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 2.5}
   m_Center: {x: 0, y: 0.5, z: -0}
+--- !u!114 &2126311168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126311166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2126311169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2126311166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectName: Car
+  objectColor: Red
+  fullName: 
+  showColor: 1
 --- !u!1001 &2128218601
 PrefabInstance:
   m_ObjectHideFlags: 0

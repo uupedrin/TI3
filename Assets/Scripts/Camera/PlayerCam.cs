@@ -27,8 +27,9 @@ public class PlayerCam : MonoBehaviour
 	int layerMask2 = ~20;
 	public string photoName;
 	
-	void Start()
+	Collider previous;
 	
+	void Start()
 	{
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
@@ -56,6 +57,20 @@ public class PlayerCam : MonoBehaviour
 			Debug.DrawRay(transform.position, transform.forward * 1000f, Color.red);
 			canPhoto = false;
 			secondRay = false;
+		}
+		//OUTLINE
+		if(photoMode && canPhoto) 
+		{
+			// if(previous != ray.collider)
+			// {
+			// 	if(previous != null) previous.GetComponent<Outliner>().DisableOutline();
+			// 	previous = ray.collider;
+			// }
+			// ray.collider.GetComponent<Outliner>().EnableOutline();
+		}
+		else if(photoMode && !canPhoto)
+		{
+			//if(previous != null) previous.GetComponent<Outliner>().DisableOutline();
 		}
 	}
 	private void Update()
