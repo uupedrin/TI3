@@ -37929,10 +37929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Yellow
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &989345160
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -39466,10 +39463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Jeep
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1012028741
 GameObject:
   m_ObjectHideFlags: 0
@@ -40495,10 +40489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1032970279 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 8aee5bb33830e9a4b9e7aa4c002eaf20,
@@ -43394,10 +43385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Truck
-  objectColor: White
-  fullName: 
-  showColor: 0
+  data: {fileID: 0}
 --- !u!1 &1097132826 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -51405,10 +51393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Jeep
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1252464297 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -53197,10 +53182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Pickup Truck
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &1300763263
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57283,10 +57265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Pickup Truck
-  objectColor: White
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &1391520751
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -60366,10 +60345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &1479119784
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -64447,10 +64423,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Taxi
-  objectColor: 
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1555234988 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a8a95ec8fc1efec418ed503155818895,
@@ -67441,10 +67414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Van
-  objectColor: Blue
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &1618843703
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68488,10 +68458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Red
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1640584424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ff7df2ff3bbc9b64384cc22c0ac057d3,
@@ -69815,10 +69782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Truck
-  objectColor: White
-  fullName: 
-  showColor: 0
+  data: {fileID: 0}
 --- !u!1001 &1679360217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72179,10 +72143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Pickup Truck
-  objectColor: White
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &1728175308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -72502,10 +72463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Red
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1732865113 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e8de6dbef973ab7408d65d1485e7a9b5,
@@ -72557,10 +72515,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Yellow
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1733919750 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3650649e16fca1440ac58308c364046c,
@@ -80239,10 +80194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Green
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1 &1907773649 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 31365fff2e4a46e428bc25af3643273b,
@@ -81270,10 +81222,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Ambulance
-  objectColor: 
-  fullName: 
-  showColor: 0
+  data: {fileID: 0}
 --- !u!1 &1937353740 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c404ae65a574802429d4f5c6c352fb8b,
@@ -82599,10 +82548,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Ambulance
-  objectColor: 
-  fullName: 
-  showColor: 0
+  data: {fileID: 0}
 --- !u!1 &1965323442 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae1c95f6adfa77746b178825eaa67d0f,
@@ -85455,10 +85401,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Yellow
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &2027448822
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87921,10 +87864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Red
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &2076539388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -89411,10 +89351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Van
-  objectColor: Blue
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &2100068434
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91155,10 +91092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: Car
-  objectColor: Red
-  fullName: 
-  showColor: 1
+  data: {fileID: 0}
 --- !u!1001 &2128218601
 PrefabInstance:
   m_ObjectHideFlags: 0
