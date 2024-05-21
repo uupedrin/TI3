@@ -72,6 +72,15 @@ public class FlashcardManager : MonoBehaviour
 		
 		return revise;
 	}
+		public List<FlashcardInfo> GetPhotos()
+	{
+		List<FlashcardInfo> photos = new List<FlashcardInfo>();
+		foreach (FlashcardInfo photo in holder.flashcards.Values)
+		{
+			photos.Add(photo);
+		}
+		return photos;
+	}
 	public void UpdateRevisedCard(string cardName, int dificultyUp)
 	{
 		holder.flashcards[cardName].dificultyScore += dificultyUp;
