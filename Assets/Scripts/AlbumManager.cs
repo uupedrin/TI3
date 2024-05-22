@@ -7,7 +7,7 @@ using System.IO;
 using TMPro;
 public class AlbumManager : MonoBehaviour
 {
-	public AlbumManager instance;
+	public static AlbumManager instance;
 	List<FlashcardInfo> photos = new List<FlashcardInfo>();
 	[SerializeField] GameObject [] polaroids;
 	[SerializeField] GameObject [] images;
@@ -57,20 +57,23 @@ public class AlbumManager : MonoBehaviour
 	void ShowAlbum()
 	{
 		ClearPage();
-		for (int i = 0, p = 0 + page * 8; i < 8 && i <= lenght; i++, p++)
+		for (int i = 0, p = 0 + page * 8; i < 8 && p < lenght; i++, p++)
 		{
 			names[i].text = photos[p].name;
 			byte[] rawImage = File.ReadAllBytes(photos[p].picturePath);
 			Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 			tex.LoadImage(rawImage);
 			images[i].GetComponent<Image>().material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
+			polaroids[i].SetActive(true);
 			images[i].SetActive(true);
 		}
 	}
 	public void PassPage()
 	{
+		Debug.Log("a");
 		if(page < pages)
 		{
+			Debug.Log("b");
 			page++;
 			ShowAlbum();
 		}
