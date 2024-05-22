@@ -21,10 +21,12 @@ public class UIManager : MonoBehaviour
 			if(AlbumUI.active == false)
 			{
 				AlbumUI.SetActive(true);
+				FlashcardManager.instance.ToggleFlashcardInteraction(true);
 			}
 			else if(AlbumUI.active == true)
 			{
 				AlbumUI.SetActive(false);
+				FlashcardManager.instance.ToggleFlashcardInteraction(false);
 			}
 		}
 	}
