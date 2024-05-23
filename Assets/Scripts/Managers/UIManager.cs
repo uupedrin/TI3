@@ -12,33 +12,40 @@ public class UIManager : MonoBehaviour
 	public GameObject AlbumUI;
 	public GameObject AlbumMngr;
 	public bool isScenePausable = true;
+	public bool anyWindowOpen {get; private set;}
 	public GameObject PauseMenu;
 	void Start()
 	{
 		GameManager.instance.uiManager = this;
+		anyWindowOpen = false;
 	}
 	void Update()
 	{
+		if(Input.GetKeyDown(KeyCode.Escape))
+		{
+			if(isScenePausable)
+			{
+				ShowPauseMenu(!PauseMenu.activeInHierarchy);
+			}
+		}
+		
 		if(Input.GetKeyDown(KeyCode.M))
 		{
+			if(GameManager.instance.isPaused) return;
+			if(anyWindowOpen) return;
 			if(AlbumUI.active == false)
 			{
 				AlbumUI.SetActive(true);
 				AlbumMngr.SetActive(true);
+				ToggleWindowState(true);
 				FlashcardManager.instance.ToggleFlashcardInteraction(true);
 			}
 			else if(AlbumUI.active == true)
 			{
 				AlbumUI.SetActive(false);
 				AlbumMngr.SetActive(false);
+				ToggleWindowState(true);
 				FlashcardManager.instance.ToggleFlashcardInteraction(false);
-			}
-		}
-		if(Input.GetKeyDown(KeyCode.Escape))
-		{
-			if(isScenePausable)
-			{
-				ShowPauseMenu(!PauseMenu.activeInHierarchy);
 			}
 		}
 	}
@@ -48,6 +55,7 @@ public class UIManager : MonoBehaviour
 		AlbumUI.SetActive(false);
 		AlbumMngr.SetActive(false);
 		FlashcardManager.instance.ToggleFlashcardInteraction(false);
+		ToggleWindowState(false);
 	}
 	
 	public void TurnOnPhoto()
@@ -78,13 +86,19 @@ public class UIManager : MonoBehaviour
 			}
 			else
 			{
-				FlashcardManager.instance.ToggleFlashcardInteraction(false);
+				if(!anyWindowOpen) FlashcardManager.instance.ToggleFlashcardInteraction(false);
 			}
 		}
 	}
 	
+	public void ToggleWindowState(bool windowOpenState)
+	{
+		anyWindowOpen = windowOpenState;
+	}
+	
 	public void LoadScene(string scene)
 	{
+		ToggleWindowState(false);
 		SceneManager.LoadScene(scene);
 		if(GameManager.instance.isPaused)
 		{

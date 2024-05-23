@@ -30,6 +30,7 @@ public class RevisionHandler : MonoBehaviour
 	void OnEnable()
 	{
 		StartCoroutine(getCards());
+		if(GameManager.instance.uiManager != null) GameManager.instance.uiManager.ToggleWindowState(true);
 	}
 	
 	IEnumerator getCards()
@@ -133,5 +134,6 @@ public class RevisionHandler : MonoBehaviour
 	void OnDisable()
 	{
 		FlashcardManager.instance.ToggleFlashcardInteraction(false);
+		if(GameManager.instance.uiManager != null) GameManager.instance.uiManager.ToggleWindowState(false);
 	}
 }
