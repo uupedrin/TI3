@@ -76,7 +76,7 @@ public class PlayerCam : MonoBehaviour
 		}
 	}
 	private void Update()
-	{		
+	{	
 		if(FlashcardManager.instance.interactingWithFlashcards) return;
 		
 		#if UNITY_ANDROID
@@ -117,8 +117,8 @@ public class PlayerCam : MonoBehaviour
 		if (photoMode) 
 		{
 			Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, zoom, Time.deltaTime * zoomSpeed);
-			UIManager.uiManager.TurnOffBase();
-			UIManager.uiManager.TurnOnPhoto();
+			GameManager.instance.uiManager.TurnOffBase();
+			GameManager.instance.uiManager.TurnOnPhoto();
 			zoom -= Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
 			zoom = Mathf.Clamp(zoom, maxZoom, minZoom);
 		}
@@ -128,14 +128,14 @@ public class PlayerCam : MonoBehaviour
 			snapCam.TakeSnapShot(photoName);
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
-			UIManager.uiManager.TurnOffPhoto();
-			UIManager.uiManager.TurnOnBase();
+			GameManager.instance.uiManager.TurnOffPhoto();
+			GameManager.instance.uiManager.TurnOnBase();
 		}
 		if (!photoMode)
 		{
 			Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, baseZoom, Time.deltaTime * zoomSpeed);
-			UIManager.uiManager.TurnOffPhoto();
-			UIManager.uiManager.TurnOnBase();
+			GameManager.instance.uiManager.TurnOffPhoto();
+			GameManager.instance.uiManager.TurnOnBase();
 		}
 		if(Input.GetKeyDown(KeyCode.F))
 		{

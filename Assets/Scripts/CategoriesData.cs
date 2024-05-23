@@ -14,6 +14,9 @@ public class CategoriesData : ScriptableObject
 
 	public string GetFullName()
 	{
-		return fullName = objectColor + " " + objectName;
+		string text;
+		if(showColor) text = objectColor + " " + objectName;
+		else text = objectName;
+		return text;
 	}
 }
