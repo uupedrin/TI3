@@ -42,6 +42,14 @@ public class UIManager : MonoBehaviour
 			}
 		}
 	}
+	
+	public void CloseAlbum()
+	{
+		AlbumUI.SetActive(false);
+		AlbumMngr.SetActive(false);
+		FlashcardManager.instance.ToggleFlashcardInteraction(false);
+	}
+	
 	public void TurnOnPhoto()
 	{
 		photoUI.SetActive(true);
