@@ -10,6 +10,7 @@ public class RevisionHandler : MonoBehaviour
 {
 	[SerializeField] TMP_Text TXT_amountToRevise;
 	[SerializeField] TMP_Text TXT_question;
+	[SerializeField] TMP_Text TXT_name;
 	[SerializeField] Image cardImage;
 	[SerializeField] GameObject contentContainer;
 	Color defaultQuestionColor;
@@ -42,12 +43,14 @@ public class RevisionHandler : MonoBehaviour
 	{
 		if(input.text.ToLower() == nextCard.name.ToLower()) //Correct
 		{
-			TXT_question.text = $"CORRECT - this is a {nextCard.name}";
+			TXT_name.text = $"This is a/an {nextCard.name}";
+			TXT_question.text = "CORRECT";
 			TXT_question.color = Color.green;
 		}
 		else
 		{
-			TXT_question.text = $"INCORRECT - this is a {nextCard.name}";
+			TXT_name.text = $"This is a/an {nextCard.name}";
+			TXT_question.text = "INCORRECT";
 			TXT_question.color = Color.red;
 		}
 		input.text = "";
@@ -74,8 +77,6 @@ public class RevisionHandler : MonoBehaviour
 		if(contentContainer.activeInHierarchy)
 		{
 			nextCard = flashcards.Dequeue();
-			TXT_question.text = "What is this?";
-			TXT_question.color = defaultQuestionColor;
 			SetCardImage();
 		}
 	}
@@ -119,12 +120,12 @@ public class RevisionHandler : MonoBehaviour
 	{
 		if(flashcards == null|| flashcards.Count > 0)
 		{
-			TXT_amountToRevise.text = $"You have {flashcards.Count} flashcards to revise!";
+			TXT_amountToRevise.text = $"{flashcards.Count} Flashcards left to revise.";
 			contentContainer.SetActive(true);
 		}
 		else
 		{
-			TXT_amountToRevise.text = "You have no flashcards left to revise!";
+			TXT_amountToRevise.text = "Congratulations! No flashcards left!";
 			contentContainer.SetActive(false);
 		}
 	}
