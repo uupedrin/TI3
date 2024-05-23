@@ -7,7 +7,6 @@ using System.IO;
 using TMPro;
 public class AlbumManager : MonoBehaviour
 {
-	public static AlbumManager instance;
 	List<FlashcardInfo> photos = new List<FlashcardInfo>();
 	[SerializeField] GameObject [] polaroids;
 	[SerializeField] GameObject [] images;
@@ -17,19 +16,7 @@ public class AlbumManager : MonoBehaviour
 	int lenght;
 	public GameObject backButton;
 	public GameObject passButton;
-	void Awake()
-	{
-		if(instance != null && instance != this)
-		{
-			Destroy(this);
-		}
-		else
-		{
-			instance = this;
-		}
-		transform.SetParent(null);
-		DontDestroyOnLoad(gameObject);
-	}
+	
 	void OnEnable() 
 	{
 		photos = FlashcardManager.instance.GetPhotos();
