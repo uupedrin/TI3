@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 6879716853735932911}
   - component: {fileID: -3778122726104774996}
   - component: {fileID: 2459353993546363903}
-  m_Layer: 0
+  - component: {fileID: -6339722439599787685}
+  m_Layer: 6
   m_Name: Berries Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6767180427033019146}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -63,7 +64,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3856830374845270463, guid: 6331b8751967cff48a3198c2f636a0e9, type: 3}
+  - {fileID: 2100000, guid: c8a07f8f19aad4245beaeaa220acb562, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,3 +111,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-6339722439599787685
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6767180427033019146}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.6125026, y: 2.0360775, z: 2.6920304}
+  m_Center: {x: -0.06410599, y: 0.018513918, z: 0.07631993}

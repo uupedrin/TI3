@@ -13,7 +13,9 @@ GameObject:
   - component: {fileID: 5106092032196089600}
   - component: {fileID: -5500815808277594740}
   - component: {fileID: 1233636611269218169}
-  m_Layer: 0
+  - component: {fileID: -699204149376754598}
+  - component: {fileID: 4307625705530584126}
+  m_Layer: 6
   m_Name: TrafficLightPole
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4252134036902937941}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -63,7 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 3856830374845270463, guid: 6331b8751967cff48a3198c2f636a0e9, type: 3}
+  - {fileID: 2100000, guid: c8a07f8f19aad4245beaeaa220acb562, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -110,3 +112,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &-699204149376754598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252134036902937941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.884792, y: 1.3442006, z: 0.8325319}
+  m_Center: {x: 0.92330134, y: 6.216337, z: 0.11871487}
+--- !u!65 &4307625705530584126
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252134036902937941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2901039, y: 6.999999, z: 0.38094425}
+  m_Center: {x: -0.21977615, y: 3.3884377, z: 0.014641285}
