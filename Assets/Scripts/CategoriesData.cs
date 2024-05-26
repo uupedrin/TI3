@@ -8,14 +8,14 @@ using UnityEngine;
 public class CategoriesData : ScriptableObject
 {
 	public string objectName;
-	public string objectColor;
+	public string objectAdjective;
 	[HideInInspector] public string fullName;
-	[SerializeField] bool showColor;
+	[SerializeField] bool showAdjective;
 
 	public string GetFullName()
 	{
 		string text;
-		if(showColor) text = objectColor + " " + objectName;
+		if(showAdjective) text = objectAdjective + " " + objectName;
 		else text = objectName;
 		return text;
 	}
