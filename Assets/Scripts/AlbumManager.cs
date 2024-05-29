@@ -57,10 +57,8 @@ public class AlbumManager : MonoBehaviour
 	}
 	public void PassPage()
 	{
-		Debug.Log("a");
 		if(page < pages)
 		{
-			Debug.Log("b");
 			page++;
 			ShowAlbum();
 		}

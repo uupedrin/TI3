@@ -72,7 +72,7 @@ public class FlashcardManager : MonoBehaviour
 		
 		return revise;
 	}
-		public List<FlashcardInfo> GetPhotos()
+	public List<FlashcardInfo> GetPhotos()
 	{
 		List<FlashcardInfo> photos = new List<FlashcardInfo>();
 		foreach (FlashcardInfo photo in holder.flashcards.Values)
