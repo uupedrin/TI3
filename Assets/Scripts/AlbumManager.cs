@@ -50,7 +50,8 @@ public class AlbumManager : MonoBehaviour
 			byte[] rawImage = File.ReadAllBytes(photos[p].picturePath);
 			Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 			tex.LoadImage(rawImage);
-			images[i].GetComponent<Image>().material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
+			images[i].GetComponent<Image>().sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
+			//images[i].GetComponent<Image>().material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
 			polaroids[i].SetActive(true);
 			images[i].SetActive(true);
 		}
