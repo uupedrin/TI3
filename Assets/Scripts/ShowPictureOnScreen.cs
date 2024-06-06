@@ -25,7 +25,8 @@ public class ShowPictureOnScreen : MonoBehaviour
 		byte[] rawImage = File.ReadAllBytes(picturePath);
 		Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 		tex.LoadImage(rawImage);
-		cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
+		cardImage.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
+		//cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
 		cardImage.gameObject.SetActive(false);
 		cardImage.gameObject.SetActive(true);
 	}

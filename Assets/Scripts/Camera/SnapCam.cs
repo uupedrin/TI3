@@ -7,9 +7,7 @@ using UnityEngine.Windows;
 public class SnapCam : MonoBehaviour
 {
 	Camera snapCam;
-	[SerializeField]
-	Camera mainCam;
-	
+	[SerializeField] Camera mainCam;	
 	int resWidth = 1920;
 	int resHeight = 1080;
 	new string name;
