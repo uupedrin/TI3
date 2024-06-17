@@ -57640,7 +57640,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9a49f94a2481644fb82ac557d8076b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shaders: []
+  shaders:
+  - {fileID: 2100000, guid: e19799c0ee4be754c99cdb9c0e8044af, type: 2}
   selected: 0
   ShaderHolder: {fileID: 2145632698}
   backButton: {fileID: 526475441}
@@ -71253,7 +71254,7 @@ PrefabInstance:
         type: 3}
       propertyPath: orientation
       value: 
-      objectReference: {fileID: 1012028746}
+      objectReference: {fileID: 2475925803883478932}
     - target: {fileID: 8504738784640954571, guid: 0cfaed58d61f11d44a6ea3ab34baac2f,
         type: 3}
       propertyPath: joystickSprite
