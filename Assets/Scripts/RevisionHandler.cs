@@ -47,12 +47,18 @@ public class RevisionHandler : MonoBehaviour
 			TXT_name.text = $"This is a/an {nextCard.name}";
 			TXT_question.text = "CORRECT";
 			TXT_question.color = Color.green;
+			
+			AnalyticsSender.instance.CorrectFlashcards++;			
 		}
 		else
 		{
 			TXT_name.text = $"This is a/an {nextCard.name}";
 			TXT_question.text = "INCORRECT";
 			TXT_question.color = Color.red;
+			
+			AnalyticsSender.instance.IncorrectFlashcards++;			
+			AnalyticsSender.instance.AddAnalytics("Revision Handler - Submit | Wrong", "What user Typed", $"User typed: {input.text.ToLower()}, Should have typed {nextCard.name.ToLower()}");
+			
 		}
 		input.text = "";
 		SwitchButtons(1);

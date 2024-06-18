@@ -12,6 +12,12 @@ public class MainMenu : MonoBehaviour
 	
 	public void Quit()
 	{
+		AnalyticsSender.instance.AddAnalytics("UIManager - Quit", "Flashcard success rate", AnalyticsSender.instance.FlashcardSuccessRate());
+		AnalyticsSender.instance.AddAnalytics("UIManager - Quit", "Time to close the game", "Time");
+		AnalyticsSender.instance.Save();
+		
+		Debug.Log("Quit!");
+		
 		Application.Quit();
 	}
 }

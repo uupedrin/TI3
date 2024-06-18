@@ -1,7 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Windows;
 
 [RequireComponent(typeof(Camera))]
 public class SnapCam : MonoBehaviour
@@ -51,13 +48,25 @@ public class SnapCam : MonoBehaviour
 			}
 			#endif
 			System.IO.File.WriteAllBytes(fileName, bytes);
+			
+			if(AnalyticsSender.instance.firstPhotoTaken && AnalyticsSender.instance.firstFlashcardDone)
+			{
+				if(AnalyticsSender.instance.GotGameMechanics == false)
+				{
+					AnalyticsSender.instance.AddAnalytics("SnapCam - Photo Taken", "Got base game mechanics", "True");
+					AnalyticsSender.instance.GotGameMechanics = true;
+				}
+			}
+			AnalyticsSender.instance.AddAnalytics("SnapCam - Photo Taken", "Time between photos", (Time.time - AnalyticsSender.instance.lastPhotoTaken).ToString());
+			AnalyticsSender.instance.lastPhotoTaken = Time.time;
+			
 			FlashcardManager.instance.CreateFlashcard(name, fileName);
 			FlashcardManager.instance.pictureScriptHolder.Enable(name, fileName);
 			snapCam.gameObject.SetActive(false);
 		}
 	}
 	public void TakeSnapShot(string n) 
-	{
+	{		
 		name = n;
 		snapCam.gameObject.SetActive(true);
 		snapCam.fieldOfView = mainCam.fieldOfView;

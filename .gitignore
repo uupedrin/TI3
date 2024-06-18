@@ -78,3 +78,7 @@ crashlytics-build.properties
 SnapShots/
 !SnapShots/*.renderTexture
 !SnapShots/*.renderTexture.meta
+
+#Analytics
+Assets/snap_n_learn_analytics.txt
+Assets/snap_n_learn_analytics.txt.meta
