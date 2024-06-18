@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -108,6 +104,11 @@ public class UIManager : MonoBehaviour
 	
 	public void Quit()
 	{
+		AnalyticsSender.instance.AddAnalytics("UIManager - Quit", "Flashcard success rate", AnalyticsSender.instance.FlashcardSuccessRate());
+		AnalyticsSender.instance.AddAnalytics("UIManager - Quit", "Time to close the game", "Time");
+		AnalyticsSender.instance.Save();
+		
+		Debug.Log("Quit!");
 		Application.Quit();
 	}
 }
