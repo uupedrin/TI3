@@ -51,7 +51,7 @@ public class AnalyticsSender : MonoBehaviour
 	
 	void SaveFile(string text)
 	{
-		string path = Application.dataPath + "/snap_n_learn_analytics.txt";
+		string path = Application.persistentDataPath + "/snap_n_learn_analytics.txt";
 		Debug.Log($"File stored in {path}");
 		File.WriteAllText(path, text);
 	}
@@ -68,8 +68,12 @@ public class AnalyticsSender : MonoBehaviour
 	
 	public string FlashcardSuccessRate()
 	{
-		float ratio = CorrectFlashcards/(CorrectFlashcards + IncorrectFlashcards);
-		return ratio.ToString();
+		if(CorrectFlashcards + IncorrectFlashcards == 0) return "0";
+		else
+		{
+			float ratio = CorrectFlashcards/(CorrectFlashcards + IncorrectFlashcards);
+			return ratio.ToString();
+		}
 	}
 
 }

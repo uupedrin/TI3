@@ -1,9 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
+	public AudioMixer mixer;
 	[Header("Music")]
 	[SerializeField] private AudioClip[] musicClips;
 	private AudioSource musicSource;
@@ -90,5 +92,12 @@ public class AudioManager : MonoBehaviour
 				break;
 			}
 		}
+	}
+	
+	public void SetMixer(Vector3 audioValues)
+	{
+		mixer.SetFloat("MasterVol", audioValues.x);
+		mixer.SetFloat("MusicVol", audioValues.y);
+		mixer.SetFloat("SFXVol", audioValues.z);
 	}
 }

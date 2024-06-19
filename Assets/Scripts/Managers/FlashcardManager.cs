@@ -19,7 +19,7 @@ public class FlashcardManager : MonoBehaviour
 		{
 			instance = this;
 		}
-		transform.SetParent(null);
+		//transform.SetParent(null);
 		DontDestroyOnLoad(gameObject);
 	}
 	private FlashcardsHolder holder = new();
@@ -34,6 +34,7 @@ public class FlashcardManager : MonoBehaviour
 			{
 				name = flashcardName,
 				picturePath = path,
+				pictureShader = "TBD",
 				lastReview = now,
 				nextReview = now
 			});
@@ -88,6 +89,14 @@ public class FlashcardManager : MonoBehaviour
 		holder.flashcards[cardName].nextReview = DateTime.Now.AddHours(2 * holder.flashcards[cardName].dificultyScore/5);
 		SaveFlashcards();
 	}
+	
+	public void UpdateFlashcardJson(string cardName, string shaderName)
+	{
+		holder.flashcards[cardName].pictureShader = shaderName;
+		SaveFlashcards();
+	}
+	
+	
 	public void ShowScreen()
 	{
 		flashcardCanvas.gameObject.SetActive(true);
@@ -125,6 +134,10 @@ public class FlashcardManager : MonoBehaviour
 		{
 			Debug.LogError("Could not save flashcards data!");
 		}
+	}
+	public void DeleteFlashcardData()
+	{
+		DataService.DeleteData("flashcards-data.json");
 	}
 	void LoadFlashcards()
 	{

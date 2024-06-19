@@ -51,5 +51,18 @@ public class JsonDataService : IDataService
 			throw e;
 		}
 	}
-
+	public void DeleteData(string RelativePath)
+	{
+		string path = Application.persistentDataPath + RelativePath;
+		
+		if(File.Exists(path))
+		{
+			File.Delete(path);
+			Debug.Log("Successfully deleted file at " + path);
+		}
+		else
+		{
+			Debug.LogWarning("There are no files to delete in " + path);
+		}
+	}
 }

@@ -18,6 +18,7 @@ public class ShowPictureOnScreen : MonoBehaviour
 		TXT_objectName.text = name;
 		gameObject.SetActive(true);
 		FlashcardManager.instance.ToggleFlashcardInteraction(true);
+		GameManager.instance.uiManager.ToggleWindowState(true);
 	}
 	
 	void ShowPicture(string picturePath)
@@ -33,6 +34,7 @@ public class ShowPictureOnScreen : MonoBehaviour
 	
 	void OnDisable()
 	{
+		GameManager.instance.uiManager.ToggleWindowState(false);
 		FlashcardManager.instance.ToggleFlashcardInteraction(false);
 	}
 }

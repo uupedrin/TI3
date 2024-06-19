@@ -1,5 +1,7 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,11 +12,37 @@ public class UIManager : MonoBehaviour
 	public bool isScenePausable = true;
 	public bool anyWindowOpen {get; private set;}
 	public GameObject PauseMenu;
+	
+	public Slider[] audioSliders;
+	
 	void Start()
 	{
 		GameManager.instance.uiManager = this;
 		anyWindowOpen = false;
+		
+		SetupComponents();
 	}
+	
+	void SetupComponents()
+	{
+		try
+		{
+			float master = PlayerPrefsManager.instance.LoadValueF("MasterVol");
+			float music = PlayerPrefsManager.instance.LoadValueF("MusicVol");
+			float sfx = PlayerPrefsManager.instance.LoadValueF("SFXVol");
+			
+			audioSliders[0].value = master;
+			audioSliders[1].value = music;
+			audioSliders[2].value = sfx;
+		}
+		catch (KeyNotFoundException)
+		{
+			PlayerPrefsManager.instance.SaveValue("MasterVol", 0);
+			PlayerPrefsManager.instance.SaveValue("MusicVol", 0);
+			PlayerPrefsManager.instance.SaveValue("SFXVol", 0);
+		}
+	}
+	
 	void Update()
 	{
 		if(Input.GetKeyDown(KeyCode.Escape))
@@ -43,6 +71,16 @@ public class UIManager : MonoBehaviour
 				ToggleWindowState(true);
 				FlashcardManager.instance.ToggleFlashcardInteraction(false);
 			}
+		}
+		
+		if(Input.GetKeyDown(KeyCode.F7))
+		{
+			GameManager.instance.CoinCheat();
+		}
+		
+		if(Input.GetKeyDown(KeyCode.F8))
+		{
+			FlashcardManager.instance.DeleteFlashcardData();
 		}
 	}
 	
@@ -90,6 +128,18 @@ public class UIManager : MonoBehaviour
 	public void ToggleWindowState(bool windowOpenState)
 	{
 		anyWindowOpen = windowOpenState;
+	}
+	
+	public void HandleVolumeSliders()
+	{
+		float master = audioSliders[0].value;
+		float music = audioSliders[1].value;
+		float sfx = audioSliders[2].value;
+		PlayerPrefsManager.instance.SaveValue("MasterVol", master);
+		PlayerPrefsManager.instance.SaveValue("MusicVol", music);
+		PlayerPrefsManager.instance.SaveValue("SFXVol", sfx);
+		Vector3 audio = new Vector3(master,music,sfx);
+		AudioManager.instance.SetMixer(audio);
 	}
 	
 	public void LoadScene(string scene)
