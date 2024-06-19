@@ -11,6 +11,8 @@ public class PlayerMove : MonoBehaviour
 	[SerializeField] float moveForce;
 	[SerializeField] float maxSpeed;
 	[SerializeField] Transform orientation;
+	
+	Vector3 startPos;
 
 	//Mobile
 	public FixedJoystick joystick;
@@ -18,6 +20,8 @@ public class PlayerMove : MonoBehaviour
 
 	void Start()
 	{
+		LoadPlayerPosition();
+		
 		body = GetComponent<Rigidbody>();
 		joystickSprite.SetActive(false);
 		#if UNITY_ANDROID
@@ -25,6 +29,30 @@ public class PlayerMove : MonoBehaviour
 		#endif
 	}
 
+	public void SavePlayerPosition()
+	{
+		PlayerPrefsManager.instance.SaveValue("PlayerPosX", transform.position.x);
+		PlayerPrefsManager.instance.SaveValue("PlayerPosY", transform.position.y);
+		PlayerPrefsManager.instance.SaveValue("PlayerPosZ", transform.position.z);
+		Debug.Log("Saving");
+	}
+	public void LoadPlayerPosition()
+	{
+		try
+		{
+			float x = PlayerPrefsManager.instance.LoadValueF("PlayerPosX");
+			float y = PlayerPrefsManager.instance.LoadValueF("PlayerPosY");
+			float z = PlayerPrefsManager.instance.LoadValueF("PlayerPosZ");
+			
+			startPos = new Vector3(x,y,z);
+		}
+		catch (KeyNotFoundException)
+		{
+			startPos = transform.position;
+		}
+		transform.position = startPos;
+	}
+	
 	void FixedUpdate()
 	{
 		if(FlashcardManager.instance.interactingWithFlashcards) return;
@@ -42,5 +70,10 @@ public class PlayerMove : MonoBehaviour
 
 		body.AddForce(direction.normalized * moveForce);
 		if(body.velocity.magnitude > maxSpeed) body.velocity = Vector3.ClampMagnitude(body.velocity, maxSpeed);
+	}
+	
+	private void OnDestroy()
+	{
+		SavePlayerPosition();
 	}
 }

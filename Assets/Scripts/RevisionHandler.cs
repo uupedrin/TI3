@@ -17,6 +17,8 @@ public class RevisionHandler : MonoBehaviour
 	[SerializeField] TMP_InputField input;
 	[SerializeField] GameObject[] buttonContainer;
 	
+	Image currentX;
+	
 	Queue<FlashcardInfo> flashcards;
 	FlashcardInfo nextCard;
 	
@@ -48,7 +50,9 @@ public class RevisionHandler : MonoBehaviour
 			TXT_question.text = "CORRECT";
 			TXT_question.color = Color.green;
 			
-			AnalyticsSender.instance.CorrectFlashcards++;			
+			GameManager.instance.AddCoins(25);
+			
+			AnalyticsSender.instance.CorrectFlashcards++;		
 		}
 		else
 		{
@@ -69,12 +73,23 @@ public class RevisionHandler : MonoBehaviour
 		if(buttonValue > 0) //Difficulty
 		{
 			FlashcardManager.instance.UpdateRevisedCard(nextCard.name,buttonValue);
-			HandleRevision();
+			Invoke(nameof(CallHandleRevision), .5f);
 		}
 		else //Next button
 		{
 			HandleRevision();
 		}
+	}
+	
+	void CallHandleRevision()
+	{
+		currentX.gameObject.SetActive(false);
+		HandleRevision();
+	}
+	
+	public void SetCurrentX(Image x)
+	{
+		currentX = x;
 	}
 	
 	void HandleRevision()
@@ -118,7 +133,8 @@ public class RevisionHandler : MonoBehaviour
 		byte[] rawImage = File.ReadAllBytes(nextCard.picturePath);
 		Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 		tex.LoadImage(rawImage);
-		cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
+		cardImage.sprite = Sprite.Create(tex, new Rect(0,0, tex.width, tex.height), Vector2.zero);
+		//cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
 		cardImage.gameObject.SetActive(false);
 		cardImage.gameObject.SetActive(true);
 	}
