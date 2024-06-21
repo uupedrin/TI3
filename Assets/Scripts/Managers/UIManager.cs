@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -12,6 +13,7 @@ public class UIManager : MonoBehaviour
 	public bool isScenePausable = true;
 	public bool anyWindowOpen {get; private set;}
 	public GameObject PauseMenu;
+	[SerializeField] TMP_Text coinTxt;
 	
 	public Slider[] audioSliders;
 	
@@ -160,5 +162,9 @@ public class UIManager : MonoBehaviour
 		
 		Debug.Log("Quit!");
 		Application.Quit();
+	}
+	public void UpdateCoins()
+	{
+		coinTxt.text = GameManager.instance.coins.ToString();
 	}
 }

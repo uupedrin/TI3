@@ -138,7 +138,10 @@ public class RevisionHandler : MonoBehaviour
 		cardImage.gameObject.SetActive(false);
 		cardImage.gameObject.SetActive(true);
 	}
-	
+	void Update()
+	{
+		cardImage.material = ShaderManager.instance.shaders[ShaderManager.instance.selected];
+	}
 	void UpdateTexts()
 	{
 		if(flashcards == null|| flashcards.Count > 0)

@@ -27,11 +27,14 @@ public class ShowPictureOnScreen : MonoBehaviour
 		Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 		tex.LoadImage(rawImage);
 		cardImage.sprite = Sprite.Create(tex, new Rect(0, 0, tex.width, tex.height), Vector2.zero);
-		//cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
+		//cardImage.material = ShaderManager.instance.shaders[ShaderManager.instance.selected];
 		cardImage.gameObject.SetActive(false);
 		cardImage.gameObject.SetActive(true);
 	}
-	
+	void Update()
+	{
+		cardImage.material = ShaderManager.instance.shaders[ShaderManager.instance.selected];
+	}
 	void OnDisable()
 	{
 		GameManager.instance.uiManager.ToggleWindowState(false);
