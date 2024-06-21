@@ -20,7 +20,7 @@ public class PlayerCam : MonoBehaviour
 	[SerializeField] float zoomSpeed;
 	[SerializeField] SnapCam snapCam;
 	[SerializeField] bool canPhoto;
-	[SerializeField] bool photoMode = false;
+	public bool photoMode = false;
 	RaycastHit hit;
 	RaycastHit ray;
 	bool firstRay;
@@ -28,9 +28,21 @@ public class PlayerCam : MonoBehaviour
 	int layerMask = 1<<6;
 	int layerMask2 = ~20;
 	public string photoName;
-	
 	Collider previous;
-	
+	public static PlayerCam instance;
+	void Awake()
+	{
+		if(instance != null && instance != this)
+		{
+			Destroy(this);
+		}
+		else
+		{
+			instance = this;
+		}
+		//transform.SetParent(null);
+		DontDestroyOnLoad(gameObject);
+	}
 	void Start()
 	{
 		Cursor.visible = false;
