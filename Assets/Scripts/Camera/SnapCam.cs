@@ -68,6 +68,7 @@ public class SnapCam : MonoBehaviour
 	public void TakeSnapShot(string n) 
 	{		
 		name = n;
+		GameManager.instance.uiManager.cardName = name;
 		snapCam.gameObject.SetActive(true);
 		snapCam.fieldOfView = mainCam.fieldOfView;
 		snapCam.transform.rotation = mainCam.transform.rotation;

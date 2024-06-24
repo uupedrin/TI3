@@ -14,6 +14,7 @@ public class UIManager : MonoBehaviour
 	public bool anyWindowOpen {get; private set;}
 	public GameObject PauseMenu;
 	[SerializeField] TMP_Text coinTxt;
+	public string cardName;
 	
 	public Slider[] audioSliders;
 	
@@ -166,5 +167,9 @@ public class UIManager : MonoBehaviour
 	public void UpdateCoins()
 	{
 		coinTxt.text = GameManager.instance.coins.ToString();
+	}
+	public void HandleClose()
+	{ 
+		FlashcardManager.instance.UpdateFlashcardJson(cardName, FlashcardManager.instance.pictureScriptHolder.cardImage.material.name);
 	}
 }

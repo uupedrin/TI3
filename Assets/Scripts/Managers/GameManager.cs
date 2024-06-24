@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
 	public void AddCoins(int value)
 	{
 		coins += value;
-		coins = Math.Clamp(coins, 0, 9999);
+		coins = Math.Clamp(coins, 0, 999);
 		PlayerPrefsManager.instance.SaveValue("coins", coins);
 		
 		uiManager.UpdateCoins();
@@ -70,7 +70,7 @@ public class GameManager : MonoBehaviour
 	}
 	public void CoinCheat()
 	{
-		AddCoins(200);
+		AddCoins(25);
 		uiManager.UpdateCoins();
 	}
 }
