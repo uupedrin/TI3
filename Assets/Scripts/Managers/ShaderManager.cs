@@ -11,9 +11,18 @@ public class ShaderManager : MonoBehaviour
 	public Image ShaderHolder;
 	public GameObject backButton;
 	public GameObject passButton;
-	
+	public Dictionary<string, Material> materialsDic;
+	void CreateDictionary()
+	{
+		materialsDic = new();
+		for (int i = 0; i < shaders.Length; i++)
+		{
+			materialsDic.Add(shaders[i].name, shaders[i]);
+		}
+	}
 	void Awake()
 	{
+		CreateDictionary();
 		if(instance != null && instance != this)
 		{
 			Destroy(this);

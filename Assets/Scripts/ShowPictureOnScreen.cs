@@ -5,7 +5,7 @@ using TMPro;
 
 public class ShowPictureOnScreen : MonoBehaviour
 {
-	[SerializeField] private Image cardImage;
+	public Image cardImage;
 	[SerializeField] private TMP_Text TXT_objectName;
 	void Start()
 	{

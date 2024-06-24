@@ -5,6 +5,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.IO;
+using Unity.VisualScripting;
 
 public class RevisionHandler : MonoBehaviour
 {
@@ -50,7 +51,7 @@ public class RevisionHandler : MonoBehaviour
 			TXT_question.text = "CORRECT";
 			TXT_question.color = Color.green;
 			
-			GameManager.instance.AddCoins(25);
+			GameManager.instance.AddCoins(1);
 			
 			AnalyticsSender.instance.CorrectFlashcards++;		
 		}
@@ -134,14 +135,15 @@ public class RevisionHandler : MonoBehaviour
 		Texture2D tex = new Texture2D(2, 2, TextureFormat.RGBA32, false);
 		tex.LoadImage(rawImage);
 		cardImage.sprite = Sprite.Create(tex, new Rect(0,0, tex.width, tex.height), Vector2.zero);
+		cardImage.material = ShaderManager.instance.materialsDic[nextCard.pictureShader];
 		//cardImage.material.SetTexture(Shader.PropertyToID("_MainTex"),tex);
 		cardImage.gameObject.SetActive(false);
 		cardImage.gameObject.SetActive(true);
 	}
-	void Update()
+	/*void Update()
 	{
-		cardImage.material = ShaderManager.instance.shaders[ShaderManager.instance.selected];
-	}
+		cardImage.material = cardImage.sprite.GetComponent<SpriteRenderer>().material;
+	}*/
 	void UpdateTexts()
 	{
 		if(flashcards == null|| flashcards.Count > 0)

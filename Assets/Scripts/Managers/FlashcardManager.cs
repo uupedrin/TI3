@@ -90,13 +90,11 @@ public class FlashcardManager : MonoBehaviour
 		SaveFlashcards();
 	}
 	
-	public void UpdateFlashcardJson(string cardName, string shaderName)
+	public void UpdateFlashcardJson(string cardName, string marterialName)
 	{
-		holder.flashcards[cardName].pictureShader = shaderName;
+		holder.flashcards[cardName].pictureShader = marterialName;
 		SaveFlashcards();
 	}
-	
-	
 	public void ShowScreen()
 	{
 		flashcardCanvas.gameObject.SetActive(true);
