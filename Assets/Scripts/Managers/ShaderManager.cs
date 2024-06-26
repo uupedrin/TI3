@@ -6,16 +6,17 @@ using System.IO;
 public class ShaderManager : MonoBehaviour
 {
 	public static ShaderManager instance;
-	public Material[] shaders;
+	public List<Material> shaders;
 	public int selected;
 	public Image ShaderHolder;
 	public GameObject backButton;
 	public GameObject passButton;
 	public Dictionary<string, Material> materialsDic;
-	void CreateDictionary()
+	
+	public void CreateDictionary()
 	{
 		materialsDic = new();
-		for (int i = 0; i < shaders.Length; i++)
+		for (int i = 0; i < shaders.Count; i++)
 		{
 			materialsDic.Add(shaders[i].name, shaders[i]);
 		}
@@ -42,7 +43,7 @@ public class ShaderManager : MonoBehaviour
 		{
 			backButton.SetActive(true);
 		}
-		if (selected == shaders.Length - 1)
+		if (selected == shaders.Count - 1)
 		{
 			passButton.SetActive(false);
 		}else
