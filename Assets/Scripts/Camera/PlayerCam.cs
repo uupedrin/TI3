@@ -29,6 +29,10 @@ public class PlayerCam : MonoBehaviour
 	int layerMask2 = ~20;
 	public string photoName;
 	Collider previous;
+	
+	[SerializeField] GameObject stencil;
+	
+	
 	public static PlayerCam instance;
 	void Awake()
 	{
@@ -75,16 +79,11 @@ public class PlayerCam : MonoBehaviour
 		//OUTLINE
 		if(photoMode && canPhoto) 
 		{
-			// if(previous != ray.collider)
-			// {
-			// 	if(previous != null) previous.GetComponent<Outliner>().DisableOutline();
-			// 	previous = ray.collider;
-			// }
-			// ray.collider.GetComponent<Outliner>().EnableOutline();
+			stencil.SetActive(true);
 		}
-		else if(photoMode && !canPhoto)
+		else
 		{
-			//if(previous != null) previous.GetComponent<Outliner>().DisableOutline();
+			stencil.SetActive(false);
 		}
 	}
 	private void Update()

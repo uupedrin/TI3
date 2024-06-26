@@ -20,23 +20,26 @@ public class TimeManagers : MonoBehaviour
 	}
 	void Update() 
 	{		
-		transform.Rotate(new Vector3(-1, 0, 0) * rotationSpeed * Time.deltaTime);
+		//transform.Rotate(new Vector3(-1, 0, 0) * rotationSpeed * Time.deltaTime);
 		
 		if ((transform.localEulerAngles.x >= 150 && transform.localEulerAngles.x <= 180) || (transform.localEulerAngles.x <= 30 && transform.localEulerAngles.x >= 0))
 		{
 			RenderSettings.skybox = sunSet;
 			light.color = new Color32(255, 210, 170, 255);
+			RenderSettings.fogColor = new Color32(157, 159, 144, 255);
 		}
 		else if(transform.localEulerAngles.x >= 30 && transform.localEulerAngles.x <= 150)
 		{
 			RenderSettings.skybox = day;
 			light.color = new Color32(255, 250, 170, 255);
+			RenderSettings.fogColor = new Color32(135, 209, 250, 255);
 		}
 		else if (transform.localEulerAngles.x <= 360 && transform.localEulerAngles.x >= 180)
 		{
 			RenderSettings.skybox = night;
 			light.color = new Color32(50, 50, 170, 255);
 			light.intensity = 0f;
+			RenderSettings.fogColor = new Color32(67, 82, 101, 255);
 		}
 	}
 }
