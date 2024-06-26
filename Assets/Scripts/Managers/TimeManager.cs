@@ -36,7 +36,7 @@ public class TimeManagers : MonoBehaviour
 		{
 			RenderSettings.skybox = night;
 			light.color = new Color32(50, 50, 170, 255);
-			light.intensity = 0.5f;
+			light.intensity = 0f;
 		}
 	}
 }
