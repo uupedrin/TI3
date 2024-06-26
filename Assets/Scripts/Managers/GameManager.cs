@@ -33,13 +33,13 @@ public class GameManager : MonoBehaviour
 		try
 		{
 			coins = PlayerPrefsManager.instance.LoadValueI("coins");
-			uiManager.UpdateCoins();
+			UpdateCoinCheck();
 		}
 		catch (KeyNotFoundException)
 		{
 			coins = 0;
 			PlayerPrefsManager.instance.SaveValue("coins", coins);
-			uiManager.UpdateCoins();
+			UpdateCoinCheck();
 		}
 	}
 	
@@ -61,16 +61,22 @@ public class GameManager : MonoBehaviour
 		coins = Math.Clamp(coins, 0, 999);
 		PlayerPrefsManager.instance.SaveValue("coins", coins);
 		
-		uiManager.UpdateCoins();
+		UpdateCoinCheck();
 	}
 	public void RemoveCoins(int value)
 	{
 		AddCoins(-value);
-		uiManager.UpdateCoins();
+		UpdateCoinCheck();
 	}
 	public void CoinCheat()
 	{
 		AddCoins(25);
-		uiManager.UpdateCoins();
+		UpdateCoinCheck();
+	}
+
+	public void UpdateCoinCheck()
+	{
+		if(uiManager != null) uiManager.UpdateCoins();
+		ShaderManager.instance.CreateDictionary();
 	}
 }
