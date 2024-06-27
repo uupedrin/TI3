@@ -51,7 +51,7 @@ public class RevisionHandler : MonoBehaviour
 			TXT_question.text = "CORRECT";
 			TXT_question.color = Color.green;
 			
-			GameManager.instance.AddCoins(1);
+			GameManager.instance.AddCoins(3);
 			
 			AnalyticsSender.instance.CorrectFlashcards++;		
 		}
