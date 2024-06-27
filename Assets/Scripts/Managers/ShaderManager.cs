@@ -7,6 +7,7 @@ public class ShaderManager : MonoBehaviour
 {
 	public static ShaderManager instance;
 	public List<Material> shaders;
+	public List<Material> allShaders;
 	public int selected;
 	public Image ShaderHolder;
 	public GameObject backButton;
@@ -16,14 +17,14 @@ public class ShaderManager : MonoBehaviour
 	public void CreateDictionary()
 	{
 		materialsDic = new();
-		for (int i = 0; i < shaders.Count; i++)
+
+		for (int i = 0; i < allShaders.Count; i++)
 		{
-			materialsDic.Add(shaders[i].name, shaders[i]);
+			materialsDic.Add(allShaders[i].name, allShaders[i]);
 		}
 	}
 	void Awake()
 	{
-		CreateDictionary();
 		if(instance != null && instance != this)
 		{
 			Destroy(this);
@@ -32,6 +33,7 @@ public class ShaderManager : MonoBehaviour
 		{
 			instance = this;
 		}
+		CreateDictionary();
 	}
 	
 	public void Update()

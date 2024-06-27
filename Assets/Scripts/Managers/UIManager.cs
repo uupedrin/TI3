@@ -60,14 +60,14 @@ public class UIManager : MonoBehaviour
 		{
 			if(GameManager.instance.isPaused) return;
 			if(anyWindowOpen) return;
-			if(AlbumUI.active == false)
+			if(AlbumUI.activeInHierarchy == false)
 			{
 				AlbumUI.SetActive(true);
 				AlbumMngr.SetActive(true);
 				ToggleWindowState(true);
 				FlashcardManager.instance.ToggleFlashcardInteraction(true);
 			}
-			else if(AlbumUI.active == true)
+			else if(AlbumUI.activeInHierarchy == true)
 			{
 				AlbumUI.SetActive(false);
 				AlbumMngr.SetActive(false);
@@ -84,6 +84,19 @@ public class UIManager : MonoBehaviour
 		if(Input.GetKeyDown(KeyCode.F8))
 		{
 			FlashcardManager.instance.DeleteFlashcardData();
+		}
+		
+		if(Input.GetKeyDown(KeyCode.F9))
+		{
+			PlayerPrefsManager.instance.ClearPrefs();
+			Debug.Log("Player Prefs are now clear");
+		}
+		
+		if(Input.GetKeyDown(KeyCode.L))
+		{
+			if(GameManager.instance.isPaused) return;
+			if(anyWindowOpen) return;
+			Shop.instance.OpenShop();
 		}
 	}
 	

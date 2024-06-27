@@ -37,7 +37,7 @@ public class ShowPictureOnScreen : MonoBehaviour
 	}
 	void OnDisable()
 	{
-		GameManager.instance.uiManager.ToggleWindowState(false);
-		FlashcardManager.instance.ToggleFlashcardInteraction(false);
+		if(GameManager.instance.uiManager != null) GameManager.instance.uiManager.ToggleWindowState(false);
+		if(FlashcardManager.instance != null) FlashcardManager.instance.ToggleFlashcardInteraction(false);
 	}
 }

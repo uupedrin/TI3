@@ -77,6 +77,5 @@ public class GameManager : MonoBehaviour
 	public void UpdateCoinCheck()
 	{
 		if(uiManager != null) uiManager.UpdateCoins();
-		ShaderManager.instance.CreateDictionary();
 	}
 }

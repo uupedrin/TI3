@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6442707764262043227}
   - component: {fileID: 7966043454282226120}
   - component: {fileID: 8876027166091253279}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: BuildingUmbrella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -28,9 +28,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7870351917908929509}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85a9990288010a4681eccda16110de2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: f43061e45f8551041ba4c59ea075815a, type: 2}
+  data: {fileID: 11400000, guid: b0428c49277388140b970f83fbac9551, type: 2}
 --- !u!65 &8876027166091253279
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -117,5 +117,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3.4529302, y: 2.4657989, z: 12.599403}
-  m_Center: {x: 0.2286551, y: 0.017909884, z: 0.05621934}
+  m_Size: {x: 3.4529302, y: 1.5466042, z: 12.599403}
+  m_Center: {x: 0.2286551, y: -0.44168758, z: 0.056219578}

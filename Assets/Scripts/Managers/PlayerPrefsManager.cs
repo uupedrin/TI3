@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerPrefsManager : MonoBehaviour
 {
-    public static PlayerPrefsManager instance;
+	public static PlayerPrefsManager instance;
 	void Awake()
 	{
 		if(instance != null  && instance != this)
@@ -31,6 +31,12 @@ public class PlayerPrefsManager : MonoBehaviour
 	public void SaveValue(string key, string value)
 	{
 		PlayerPrefs.SetString(key,value);
+		PlayerPrefs.Save();
+	}
+	public void SaveValue(string key, bool value)
+	{
+		int save = value ? 1 : 0;
+		PlayerPrefs.SetInt(key, save);
 		PlayerPrefs.Save();
 	}
 	
@@ -61,6 +67,18 @@ public class PlayerPrefsManager : MonoBehaviour
 		if(PlayerPrefs.HasKey(key))
 		{
 			return PlayerPrefs.GetString(key);
+		}
+		else
+		{
+			throw new KeyNotFoundException($"{key} does not exist in Player Prefs");
+		}
+	}
+	public bool LoadValueB(string key)
+	{
+		if(PlayerPrefs.HasKey(key))
+		{
+			int value = PlayerPrefs.GetInt(key);
+			return value == 1;
 		}
 		else
 		{
