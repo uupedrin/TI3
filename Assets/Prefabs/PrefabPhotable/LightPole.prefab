@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 8411392282988483502}
   - component: {fileID: 3586057779195650858}
   - component: {fileID: 4293208638012972353}
-  - component: {fileID: 5996909520775222307}
   - component: {fileID: 3176275010518601537}
+  - component: {fileID: 445769026340759459}
   m_Layer: 6
   m_Name: LightPole
   m_TagString: Untagged
@@ -43,7 +43,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2966171931571039776}
-  m_Mesh: {fileID: -8473301362884010404, guid: 6331b8751967cff48a3198c2f636a0e9, type: 3}
+  m_Mesh: {fileID: -8473301362884010404, guid: 9eb1396139adf2c4da442e38fc7efb24, type: 3}
 --- !u!23 &3586057779195650858
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -99,27 +99,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 252990f50a29da24eaccc11a0ea471fb, type: 2}
---- !u!65 &5996909520775222307
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2966171931571039776}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.3730979, y: 6.981577, z: 0.3}
-  m_Center: {x: 0.009885073, y: 3.4356794, z: 0}
 --- !u!65 &3176275010518601537
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -141,3 +120,26 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.1406083, y: 1.2847891, z: 0.3}
   m_Center: {x: 1.2606881, y: 6.2840734, z: 0}
+--- !u!136 &445769026340759459
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2966171931571039776}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.17866898
+  m_Height: 6.322993
+  m_Direction: 1
+  m_Center: {x: 0.0020051003, y: 2.9423797, z: 0}
