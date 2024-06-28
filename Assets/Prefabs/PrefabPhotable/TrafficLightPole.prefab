@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: -5500815808277594740}
   - component: {fileID: 1233636611269218169}
   - component: {fileID: -699204149376754598}
-  - component: {fileID: 4307625705530584126}
+  - component: {fileID: 4444410704949274526}
+  - component: {fileID: 6115926954796995125}
   m_Layer: 6
   m_Name: TrafficLightPole
   m_TagString: Untagged
@@ -44,7 +45,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4252134036902937941}
-  m_Mesh: {fileID: -816977001765645598, guid: 6331b8751967cff48a3198c2f636a0e9, type: 3}
+  m_Mesh: {fileID: -816977001765645598, guid: 9eb1396139adf2c4da442e38fc7efb24, type: 3}
 --- !u!23 &5106092032196089600
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -133,7 +134,30 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.884792, y: 1.3442006, z: 0.8325319}
   m_Center: {x: 0.92330134, y: 6.216337, z: 0.11871487}
---- !u!65 &4307625705530584126
+--- !u!136 &4444410704949274526
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4252134036902937941}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12977257
+  m_Height: 5.806026
+  m_Direction: 1
+  m_Center: {x: -0.23073414, y: 2.7914512, z: 0}
+--- !u!65 &6115926954796995125
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4229615785155329020}
   - component: {fileID: 2934094280063892983}
   - component: {fileID: -239802528607110861}
-  - component: {fileID: 173356181303886864}
+  - component: {fileID: 3135484314761746109}
   m_Layer: 6
   m_Name: UmbellaRound
   m_TagString: Untagged
@@ -44,7 +44,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6927076750517678107}
-  m_Mesh: {fileID: 7345353060502395465, guid: 6331b8751967cff48a3198c2f636a0e9, type: 3}
+  m_Mesh: {fileID: 7345353060502395465, guid: 9eb1396139adf2c4da442e38fc7efb24, type: 3}
 --- !u!23 &3641235280179452330
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -133,8 +133,8 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.9999995, y: 0.51782274, z: 2.9999995}
   m_Center: {x: -0.0011255741, y: 1.7161455, z: 0.00058472157}
---- !u!65 &173356181303886864
-BoxCollider:
+--- !u!136 &3135484314761746109
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -151,6 +151,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 0.2, y: 2.024156, z: 0.2}
-  m_Center: {x: -0.0011255145, y: 0.96297884, z: 0.00058472157}
+  serializedVersion: 2
+  m_Radius: 0.054132663
+  m_Height: 1.6936991
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.79546463, z: 0}
