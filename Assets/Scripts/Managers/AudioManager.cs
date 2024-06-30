@@ -16,6 +16,7 @@ public class AudioManager : MonoBehaviour
 	[SerializeField] private AudioClip[] sfx2DClips;
 	[SerializeField] private int sourceAmount2D;
 	private List<GameObject> source2DPool = new();
+	[SerializeField] [Range(0,1)] float FootstepVolume;
 	
 	[Header("3D SFX")]
 	[SerializeField] private GameObject sfxSourcePrefab3D;
@@ -73,6 +74,8 @@ public class AudioManager : MonoBehaviour
 			{
 				AudioSource source = source2DPool[i].GetComponent<AudioSource>();
 				source.clip = sfx2DClips[sfxId];
+				if(sfxId != 0) source.volume = FootstepVolume;
+				else source.volume = 1;
 				source.gameObject.SetActive(true);
 				break;
 			}
@@ -88,6 +91,8 @@ public class AudioManager : MonoBehaviour
 				AudioSource source = source2DPool[i].GetComponent<AudioSource>();
 				source.clip = sfx2DClips[sfxId];
 				source.gameObject.transform.position = audioPos;
+				if(sfxId != 0) source.volume = FootstepVolume;
+				else source.volume = 1;
 				source.gameObject.SetActive(true);
 				break;
 			}

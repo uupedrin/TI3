@@ -11,32 +11,32 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 133.8636
+      value: -72.22144
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25776058
+      value: 0.018384531
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.39098
+      value: 82.899956
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.5000016
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.8660245
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
@@ -51,7 +51,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 754b3ca8ec5796843a446676e0f06ca8,
         type: 3}
@@ -73,6 +73,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 754b3ca8ec5796843a446676e0f06ca8,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -116,8 +121,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.5030818, y: 2.1416886, z: 5.1502333}
-  m_Center: {x: 0, y: 0.81808376, z: -0.16008067}
+  m_Size: {x: 1.9441986, y: 2.1416886, z: 4.826477}
+  m_Center: {x: -0.0036392212, y: 0.81808376, z: -0.24695969}
 --- !u!114 &-6318285132983896166
 MonoBehaviour:
   m_ObjectHideFlags: 0

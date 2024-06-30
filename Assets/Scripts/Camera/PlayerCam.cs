@@ -28,6 +28,7 @@ public class PlayerCam : MonoBehaviour
 	int layerMask = 1<<6;
 	int layerMask2 = ~20;
 	public string photoName;
+	public string[] acceptableWords;
 	Collider previous;
 	
 	[SerializeField] GameObject stencil;
@@ -79,7 +80,7 @@ public class PlayerCam : MonoBehaviour
 		//OUTLINE
 		if(photoMode && canPhoto) 
 		{
-			stencil.SetActive(true);
+			//stencil.SetActive(true);
 		}
 		else
 		{
@@ -136,7 +137,7 @@ public class PlayerCam : MonoBehaviour
 		if (photoMode && canPhoto && Input.GetMouseButtonDown(0))
 		{
 			photoName = ray.collider.GetComponent<Categories>().data.GetFullName();
-			snapCam.TakeSnapShot(photoName);
+			snapCam.TakeSnapShot(photoName, ray.collider.GetComponent<Categories>().data.GetAcceptance());
 			photoMode = false;
 			Camera.main.fieldOfView = baseZoom;
 			GameManager.instance.uiManager.TurnOffPhoto();

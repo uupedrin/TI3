@@ -16,3 +16,6 @@ MonoBehaviour:
   objectAdjective: 
   fullName: 
   showAdjective: 0
+  acceptanceList:
+  - Toilet
+  - Porta Potty

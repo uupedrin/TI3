@@ -16,3 +16,6 @@ MonoBehaviour:
   objectAdjective: Police
   fullName: 
   showAdjective: 1
+  acceptanceList:
+  - Car
+  - Vehicle

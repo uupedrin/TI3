@@ -11,17 +11,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 122.05375
+      value: -78.62
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25776055
+      value: -7.2982254
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.841278
+      value: -82.1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
@@ -31,7 +31,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
         type: 3}
@@ -73,6 +73,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 3a33a0ceaa7ab2d49af16a07154d6881,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -116,8 +121,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.8068993, y: 2.2236376, z: 4.409439}
-  m_Center: {x: 0, y: 0.8590584, z: 0.056515694}
+  m_Size: {x: 2.1656556, y: 2.2236376, z: 4.2477903}
+  m_Center: {x: 0, y: 0.8590584, z: -0.024308681}
 --- !u!114 &9159280910742276613
 MonoBehaviour:
   m_ObjectHideFlags: 0

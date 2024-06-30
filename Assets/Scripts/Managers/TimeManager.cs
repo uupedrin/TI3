@@ -12,7 +12,10 @@ public class TimeManagers : MonoBehaviour
 	[SerializeField] Material day;
 	[SerializeField] Material night;
 	Light light;
-	float rotationSpeed;	
+	float rotationSpeed;
+	
+	float skyRotation;
+	
 	void Start ()
 	{
 		rotationSpeed = 360/dayLenghtMinutes/60;
@@ -20,26 +23,39 @@ public class TimeManagers : MonoBehaviour
 	}
 	void Update() 
 	{		
-		//transform.Rotate(new Vector3(-1, 0, 0) * rotationSpeed * Time.deltaTime);
+		transform.Rotate(new Vector3(1, 0, 0) * rotationSpeed * Time.deltaTime);
 		
-		if ((transform.localEulerAngles.x >= 150 && transform.localEulerAngles.x <= 180) || (transform.localEulerAngles.x <= 30 && transform.localEulerAngles.x >= 0))
+		if (transform.localEulerAngles.x >= 345 || transform.localEulerAngles.x <= 15 || (transform.localEulerAngles.x >= 165 && transform.localEulerAngles.x <= 195))
 		{
 			RenderSettings.skybox = sunSet;
 			light.color = new Color32(255, 210, 170, 255);
 			RenderSettings.fogColor = new Color32(157, 159, 144, 255);
+			
+			sunSet.SetFloat("_Rotation", skyRotation);
 		}
-		else if(transform.localEulerAngles.x >= 30 && transform.localEulerAngles.x <= 150)
+		else if(transform.localEulerAngles.x >= 15 && transform.localEulerAngles.x <= 165)
 		{
 			RenderSettings.skybox = day;
-			light.color = new Color32(255, 250, 170, 255);
+			light.color = new Color32(255, 251, 220, 255);
 			RenderSettings.fogColor = new Color32(135, 209, 250, 255);
+			
+			day.SetFloat("_Rotation", skyRotation);
 		}
-		else if (transform.localEulerAngles.x <= 360 && transform.localEulerAngles.x >= 180)
+		else if (transform.localEulerAngles.x <= 345 && transform.localEulerAngles.x >= 195)
 		{
 			RenderSettings.skybox = night;
 			light.color = new Color32(50, 50, 170, 255);
 			light.intensity = 0f;
 			RenderSettings.fogColor = new Color32(67, 82, 101, 255);
+			
+			night.SetFloat("_Rotation", skyRotation);
 		}
+		
+		
+	}
+	
+	private void FixedUpdate() {
+		skyRotation += Time.fixedDeltaTime * .25f;
+		skyRotation %= 360;
 	}
 }
