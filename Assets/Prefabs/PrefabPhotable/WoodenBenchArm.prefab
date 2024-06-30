@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1732275933173604779}
   - component: {fileID: 5273059542859160510}
   - component: {fileID: -968260733089332352}
+  - component: {fileID: 3978736447229631404}
   m_Layer: 6
   m_Name: WoodenBenchArm
   m_TagString: Untagged
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.949681, y: 1.4999996, z: 0.99999994}
-  m_Center: {x: -0.0015397668, y: 0.6886595, z: 0.015402168}
+  m_Size: {x: 1.949681, y: 0.7132127, z: 0.99999994}
+  m_Center: {x: -0.0015397668, y: 0.29526603, z: 0.015402168}
+--- !u!65 &3978736447229631404
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4825398751622610072}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.949681, y: 1.4999996, z: 0.10277712}
+  m_Center: {x: -0.0015397668, y: 0.6886595, z: -0.43320924}

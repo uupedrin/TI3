@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4695586634206300872}
   - component: {fileID: 7376752839458912271}
   - component: {fileID: 920621982551841703}
+  - component: {fileID: 7969515997427499182}
   m_Layer: 6
   m_Name: WoodenChair
   m_TagString: Untagged
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6, y: 1.2, z: 0.5999999}
-  m_Center: {x: 0.000934422, y: 0.5501338, z: -0.16238081}
+  m_Size: {x: 0.6, y: 0.641983, z: 0.48400116}
+  m_Center: {x: 0.000934422, y: 0.2711253, z: -0.14861679}
+--- !u!65 &7969515997427499182
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7098129343934868713}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 1.2, z: 0.09334564}
+  m_Center: {x: 0.000934422, y: 0.5501338, z: -0.3943901}

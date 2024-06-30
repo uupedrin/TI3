@@ -14,12 +14,13 @@ GameObject:
   - component: {fileID: 2609367744395867313}
   - component: {fileID: -570186055188790229}
   - component: {fileID: -3597640644259745381}
+  - component: {fileID: 2428364227203788451}
   m_Layer: 6
   m_Name: WoodenTablePicnic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6503286330561466083
 Transform:
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6031756680888926879}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 3, y: 1.2, z: 3}
-  m_Center: {x: 0, y: 0.55293965, z: 0.0050264}
+  m_Size: {x: 3, y: 0.67782557, z: 3}
+  m_Center: {x: 0, y: 0.2918524, z: 0.0050263405}
+--- !u!65 &2428364227203788451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6031756680888926879}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 1.2002618, z: 1.5914524}
+  m_Center: {x: 0, y: 0.55280876, z: 0.0050264}
