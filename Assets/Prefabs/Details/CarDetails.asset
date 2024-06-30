@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: CarDetails
   m_EditorClassIdentifier: 
   objectName: Car
-  objectColor: 
+  objectAdjective: 
   fullName: 
-  showColor: 0
+  showAdjective: 0
+  acceptanceList:
+  - Vehicle

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: TruckDetails
   m_EditorClassIdentifier: 
   objectName: Truck
-  objectAdjective: Pickup
+  objectAdjective: 
   fullName: 
   showAdjective: 0
+  acceptanceList: []

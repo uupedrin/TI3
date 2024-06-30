@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a62704b7294a0404ca0d6f4a122d7d38, type: 3}
   m_Name: BikeDetails
   m_EditorClassIdentifier: 
-  objectName: Bike
+  objectName: Bicycle
   objectAdjective: 
   fullName: 
   showAdjective: 0
+  acceptanceList:
+  - Bike

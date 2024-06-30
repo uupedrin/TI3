@@ -13,13 +13,13 @@ GameObject:
   - component: {fileID: 6879716853735932911}
   - component: {fileID: -3778122726104774996}
   - component: {fileID: 2459353993546363903}
-  - component: {fileID: -6339722439599787685}
+  - component: {fileID: 8388145320239870907}
   m_Layer: 6
   m_Name: Berries Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6784985995082233927
 Transform:
@@ -111,8 +111,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f02fb8bbd38a91f47a9500f43b6aa537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!65 &-6339722439599787685
-BoxCollider:
+--- !u!135 &8388145320239870907
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -130,5 +130,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.6125026, y: 2.0360775, z: 2.6920304}
-  m_Center: {x: -0.06410599, y: 0.018513918, z: 0.07631993}
+  m_Radius: 1.3460153
+  m_Center: {x: -0.064105935, y: -0.30307662, z: 0.07631994}

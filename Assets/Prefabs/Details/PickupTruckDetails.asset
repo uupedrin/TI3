@@ -16,3 +16,6 @@ MonoBehaviour:
   objectAdjective: Pickup
   fullName: 
   showAdjective: 1
+  acceptanceList:
+  - Truck
+  - Pickup

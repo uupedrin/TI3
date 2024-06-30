@@ -16,3 +16,5 @@ MonoBehaviour:
   objectAdjective: Berry
   fullName: 
   showAdjective: 0
+  acceptanceList:
+  - Bush

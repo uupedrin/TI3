@@ -11,4 +11,5 @@ public class FlashcardInfo
 	public string pictureShader = "";
 	public DateTime lastReview = new DateTime();
 	public DateTime nextReview = new DateTime();
+	public string[] acceptableWords;
 }

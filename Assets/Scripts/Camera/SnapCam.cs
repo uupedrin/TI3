@@ -8,6 +8,7 @@ public class SnapCam : MonoBehaviour
 	int resWidth = 1920;
 	int resHeight = 1080;
 	new string name;
+	string[] acceptableWords;
 	void Awake()
 	{
 		snapCam = GetComponent<Camera>();
@@ -60,14 +61,15 @@ public class SnapCam : MonoBehaviour
 			AnalyticsSender.instance.AddAnalytics("SnapCam - Photo Taken", "Time between photos", (Time.time - AnalyticsSender.instance.lastPhotoTaken).ToString());
 			AnalyticsSender.instance.lastPhotoTaken = Time.time;
 			
-			FlashcardManager.instance.CreateFlashcard(name, fileName);
+			FlashcardManager.instance.CreateFlashcard(name, fileName, acceptableWords);
 			FlashcardManager.instance.pictureScriptHolder.Enable(name, fileName);
 			snapCam.gameObject.SetActive(false);
 		}
 	}
-	public void TakeSnapShot(string n) 
+	public void TakeSnapShot(string n, string[] acceptable) 
 	{		
 		name = n;
+		acceptableWords = acceptable;
 		GameManager.instance.uiManager.cardName = name;
 		snapCam.gameObject.SetActive(true);
 		snapCam.fieldOfView = mainCam.fieldOfView;

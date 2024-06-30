@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
-using UnityEngine.Networking;
 using System.IO;
 using Unity.VisualScripting;
+using System.Linq;
 
 public class RevisionHandler : MonoBehaviour
 {
@@ -45,7 +45,7 @@ public class RevisionHandler : MonoBehaviour
 	
 	public void Submit()
 	{
-		if(input.text.ToLower() == nextCard.name.ToLower()) //Correct
+		if(input.text.ToLower() == nextCard.name.ToLower() || nextCard.acceptableWords.Contains(input.text.ToLower())) //Correct
 		{
 			TXT_name.text = $"This is a/an {nextCard.name}";
 			TXT_question.text = "CORRECT";

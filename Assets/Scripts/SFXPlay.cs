@@ -25,4 +25,9 @@ public class SFXPlay : MonoBehaviour
 		gameObject.transform.position = Vector3.zero;
 		gameObject.SetActive(false);
 	}
+	
+	public void SetVolume(float vol)
+	{
+		source.volume = vol;
+	}
 }
