@@ -16,10 +16,15 @@ public class TimeManagers : MonoBehaviour
 	
 	float skyRotation;
 	
-	void Start ()
+	private void Awake()
 	{
 		rotationSpeed = 360/dayLenghtMinutes/60;
 		light = pLight.GetComponent<Light>();
+	}
+	
+	void Start ()
+	{
+		LoadDayTime();
 	}
 	void Update() 
 	{		
@@ -57,5 +62,28 @@ public class TimeManagers : MonoBehaviour
 	private void FixedUpdate() {
 		skyRotation += Time.fixedDeltaTime * .25f;
 		skyRotation %= 360;
+	}
+	
+	private void OnDestroy() {
+		SaveDayTime();
+	}
+	
+	void LoadDayTime()
+	{
+		try
+		{
+			float xRotation = PlayerPrefsManager.instance.LoadValueF("DayRotation");
+			
+			transform.rotation = Quaternion.Euler(xRotation, transform.rotation.y, transform.rotation.z);
+		}
+		catch (KeyNotFoundException)
+		{
+			Debug.LogWarning("No day time found! Using default values");
+		}
+	}
+	void SaveDayTime()
+	{
+		PlayerPrefsManager.instance.SaveValue("DayRotation", transform.localEulerAngles.x);
+		Debug.Log("Saving Rotation");
 	}
 }

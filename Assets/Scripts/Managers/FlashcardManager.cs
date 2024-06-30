@@ -25,7 +25,7 @@ public class FlashcardManager : MonoBehaviour
 	private FlashcardsHolder holder = new();
 	private IDataService DataService = new JsonDataService();
 	
-	public void CreateFlashcard(string flashcardName, string path, string[] acceptableWords)
+	public void CreateFlashcard(string flashcardName, string path, string[] acceptableWordList)
 	{
 		if(!holder.flashcards.ContainsKey(flashcardName))
 		{
@@ -37,7 +37,7 @@ public class FlashcardManager : MonoBehaviour
 				pictureShader = "Default",
 				lastReview = now,
 				nextReview = now,
-				acceptableWords = acceptableWords
+				acceptableWords = acceptableWordList
 			});
 		}
 		else //If already exists, update flashcard
