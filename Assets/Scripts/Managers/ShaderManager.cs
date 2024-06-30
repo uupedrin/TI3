@@ -38,6 +38,15 @@ public class ShaderManager : MonoBehaviour
 	
 	public void Update()
 	{
+		if(shaders.Count < 2)
+		{
+			ShaderHolder.gameObject.SetActive(false);
+		}
+		else
+		{
+			ShaderHolder.gameObject.SetActive(true);
+		}
+		
 		if (selected == 0)
 		{
 			backButton.SetActive(false);
