@@ -20,13 +20,15 @@ public class PlayerMove : MonoBehaviour
 
 	void Start()
 	{
-		LoadPlayerPosition();
 		
 		body = GetComponent<Rigidbody>();
 		joystickSprite.SetActive(false);
 		#if UNITY_ANDROID
 		joystickSprite.SetActive(true);
 		#endif
+		
+		LoadPlayerPosition();
+		InvokeRepeating(nameof(SavePlayerPosition), 5f, 5f);
 	}
 
 	public void SavePlayerPosition()
@@ -45,6 +47,7 @@ public class PlayerMove : MonoBehaviour
 			float z = PlayerPrefsManager.instance.LoadValueF("PlayerPosZ");
 			
 			startPos = new Vector3(x,y,z);
+			Debug.Log("Found");
 		}
 		catch (KeyNotFoundException)
 		{

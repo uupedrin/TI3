@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1334102413030773800}
   - component: {fileID: 6272620429985754918}
   - component: {fileID: -3523576180673625495}
+  - component: {fileID: 2674436600335835647}
   m_Layer: 6
   m_Name: WoodenChairArms
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6464717854119232145}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6, y: 1.2, z: 0.6000001}
-  m_Center: {x: -0.0032802373, y: 0.53135204, z: -0.03363231}
+  m_Size: {x: 0.5371516, y: 0.6164851, z: 0.45811018}
+  m_Center: {x: -0.0032802226, y: 0.23959458, z: -0.00672151}
+--- !u!65 &2674436600335835647
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6464717854119232145}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.5350261, y: 1.2, z: 0.13861018}
+  m_Center: {x: -0.0032802164, y: 0.53135204, z: -0.25185475}

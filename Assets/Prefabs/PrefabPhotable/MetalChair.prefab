@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3329848573733323692}
   - component: {fileID: 4741034635195510085}
   - component: {fileID: 5475867231070298486}
+  - component: {fileID: 8517478789783191861}
   m_Layer: 6
   m_Name: MetalChair
   m_TagString: Untagged
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5702362, y: 1.2, z: 0.4870224}
-  m_Center: {x: -0.0021591187, y: 0.52506256, z: 0.22287369}
+  m_Size: {x: 0.5702362, y: 0.5043216, z: 0.4870224}
+  m_Center: {x: -0.0021591187, y: 0.17722332, z: 0.22287369}
+--- !u!65 &8517478789783191861
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 575452469697550116}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 1.2, z: 0.055923462}
+  m_Center: {x: 0.0019258857, y: 0.52506256, z: -0.047649384}

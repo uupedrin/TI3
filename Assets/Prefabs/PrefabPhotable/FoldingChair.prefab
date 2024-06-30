@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2488237729253993258}
   - component: {fileID: 5099698128305777495}
   - component: {fileID: 6052802669666302694}
+  - component: {fileID: 8365825612649299313}
   m_Layer: 6
   m_Name: FoldingChair
   m_TagString: Untagged
@@ -130,5 +131,26 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.6, y: 1.2, z: 0.60000014}
-  m_Center: {x: 0, y: 0.49983087, z: -0.025207222}
+  m_Size: {x: 0.6, y: 0.56052107, z: 0.50046635}
+  m_Center: {x: 2.6241329e-10, y: 0.18008873, z: 0.009334526}
+--- !u!65 &8365825612649299313
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6245947611839490416}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.6, y: 1.2, z: 0.10656844}
+  m_Center: {x: -0.00000036316058, y: 0.4998238, z: -0.20090537}
